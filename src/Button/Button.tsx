@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 
 import classes from "./Button.module.css";
-// не получилось подключить classnames и воспользоваться classes.module
 
 const solidViolet = classes.solidViolet;
 const outlineViolet = classes.outlineViolet;
