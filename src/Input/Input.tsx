@@ -1,17 +1,26 @@
 import React from 'react';
-// import classes from "./Input.module.css";
+import classes from "./Input.module.css";
 
 
 export interface InputProps {
-    label: string;
-    icon: string;
-    placeholder: string;
-    errorText: string;
-    filled: boolean;
-    size: string;
+    className?:
+    | "solidViolet"
+    | "outlineViolet"
+    | "solidYellow"
+    | "solidRed"
+    | "outlineRed";
+    label?: string;
+    icon?: string;
+    placeholder?: string;
+    errorText?: string;
+    size?: 
+    | "xl"
+    | "l"
+    | "m"
+    | "s";
 }
-export const Input: React.FC<InputProps> = ({
-        size, label, placeholder,icon,errorText,filled
+ const Input: React.FC<InputProps> = ({
+        size='l', label, placeholder,icon,errorText
     }) => {
 
 
@@ -22,12 +31,14 @@ export const Input: React.FC<InputProps> = ({
         ? 
         <label>
             <p>{label}</p>
-            <input placeholder={placeholder} >
+            <input placeholder={placeholder} className={[classes.input, classes[size]].join(" ")} >
             </input>
         </label>
         :
-        <input placeholder={placeholder} >
+        <input placeholder={placeholder} className={classes.input} >
         </input>}
         </>
     );
 };
+
+export default Input

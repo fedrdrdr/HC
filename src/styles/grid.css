@@ -5,7 +5,8 @@
     margin: 28px;
     grid-auto-rows: minmax(100px, auto);
     justify-content: center;
-    align-content: center;
+    align-content: space-between;
+    min-height: 100vh;
 }
 
 .v1,.v4 {

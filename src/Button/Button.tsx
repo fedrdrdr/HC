@@ -9,7 +9,7 @@ const solidRed = classes.solidRed;
 const outlineRed = classes.outlineRed;
 
 export interface ButtonProps {
-  className?:
+  className?: 
     | "solidViolet"
     | "outlineViolet"
     | "solidYellow"
@@ -35,14 +35,14 @@ export interface ButtonProps {
 // }
 
 const Button: React.FC<ButtonProps> = ({
-  className,
+  className = 'solidViolet',
   icon,
   children,
   onClick,
   ...props
 }) => {
   const buttonWithIcon = ("" && !icon) || (classes.buttonWithIcon && icon);
-  const classButton = classes.className;
+  const classButton = classes[className];
   const classButton2 =
     (className === "solidViolet" && solidViolet) ||
     (className === "outlineViolet" && outlineViolet) ||
@@ -55,8 +55,7 @@ const Button: React.FC<ButtonProps> = ({
       type="button"
       // работает на storybook
       className={[
-        className,
-        classButton,
+
         classButton2,
         classes.button,
         "button",
@@ -69,11 +68,8 @@ const Button: React.FC<ButtonProps> = ({
     >
       {icon && <img src={icon} />}
       {console.log(
-        className,
-        classes,
-        classes.className,
-        classButton,
-        classButton2
+       'classButton', classButton,
+        'classButton2',classButton2
       )}
       <p>{children}</p>
     </button>

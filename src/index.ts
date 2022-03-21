@@ -1,10 +1,11 @@
 import Button from './Button/Button';
-import margins from './styles/margins.css';
-import grid from './styles/grid.css';
+import styles from './styles/styles'
+import Input from './Input/Input';
+
 
 export {
     Button,
+    Input,
+    styles,
 
-    margins,
-    grid,
 }
