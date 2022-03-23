@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-// import classes from "./Questions.module.css";
+import classes from "./Accordion.module.css";
 
 function AccordionItem({ title,content }) {
   const [active, setActive] = useState(false);
@@ -10,9 +10,9 @@ function AccordionItem({ title,content }) {
 
   useEffect(() => {}, [active]);
   return (
-    <li  onClick={clickHandler}>
+    <li  className={classes.title} onClick={clickHandler}>
       <p>{title}</p>
-      {active && <p >{content}</p>}
+      {active && <p className={classes.content}>{content}</p>}
     </li>
   );
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import AccordionItem from './AccordionItem'
+import classes from "./Accordion.module.css";
 
 interface AccordionEntry {
     title: string;
@@ -17,7 +18,7 @@ export interface AccordionProps {
 
 
     return (
-        <ul>
+        <ul className={classes.list}>
             {children.map(el=>
                 <AccordionItem 
                 title={el.title}
