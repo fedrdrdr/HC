@@ -1,12 +1,14 @@
 .grid-wrapper {
+    min-height: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 8px;
     margin: 28px;
-    grid-auto-rows: minmax(100px, auto);
-    justify-content: center;
-    align-content: space-between;
-    min-height: 100vh;
+
+    /* justify-content: center;
+    align-content: space-between; */
+    /* grid-template-rows: auto 1fr auto; */
+
 }
 
 .v1,.v4 {
