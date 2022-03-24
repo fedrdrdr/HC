@@ -6,6 +6,7 @@ import Accordion from './Accordion/Accordion';
 export {
     Button,
     Input,
+    Accordion,
     styles,
-    Accordion
+    
 }

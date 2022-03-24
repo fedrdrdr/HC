@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from "react";
 import classes from "./Accordion.module.css";
 
-function AccordionItem({ title,content }) {
+export interface AccordionEntry {
+  title: string;
+  content: string;
+}
+
+function AccordionItem({ title,content }:AccordionEntry) {
   const [active, setActive] = useState(false);
 
   function clickHandler() {
