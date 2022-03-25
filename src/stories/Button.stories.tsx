@@ -16,7 +16,7 @@ import  Button  from '../Button/Button';
 
   Primary.args = {
   children: 'knopka',
-  icon: 'static/media/src/stories/assets/broadcast_icon.svg' || 'static/media/src/stories/assets/google_icon.svg'
+  icon: '/img/broadcast_icon.svg' || '/img/broadcast_icon.svg'
   };
 
 
