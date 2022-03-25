@@ -13,10 +13,10 @@ import  Button  from '../Button/Button';
   const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
   export const Primary = Template.bind({});
-  
+
   Primary.args = {
   children: 'knopka',
-  icon: 'static/media/src/stories/assets/icons/broadcast_icon.png' || 'static/media/src/stories/assets/icons/google_icon.png'
+  icon: 'static/media/src/stories/assets/broadcast_icon.svg' || 'static/media/src/stories/assets/google_icon.svg'
   };
 
 

@@ -19,6 +19,6 @@ export const Primary = Template.bind({});
 
 Primary.args = {
 children: '',
-icon: 'static/media/src/stories/assets/icons/broadcast_icon.png',
+icon: 'static/media/src/stories/assets/broadcast_icon.svg',
 placeholder: 'qw'
 };
