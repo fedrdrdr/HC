@@ -21,15 +21,8 @@ const outlineRed = classes.outlineRed;
 // }
 
 export interface ButtonProps {
-  type?:
-    | "solid"
-    | "outline"
-    | "flat"
-;
-color?:
-| "violet"
-| "red"
-| "yellow";
+  type?: "solid" | "outline" | "flat";
+  color?: "violet" | "red" | "yellow";
   children?: string;
   icon?: string;
   onClick?: () => void;
@@ -61,7 +54,6 @@ color?:
 //   );
 // };
 
-
 const Button: React.FC<ButtonProps> = ({
   type = "solid",
   color = "violet",
@@ -72,23 +64,24 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   const buttonWithIcon = ("" && !icon) || (classes.buttonWithIcon && icon);
   // const classButton = classes[className];
-const classButton = 
-type==="solid"&&color==="violet" && solidViolet ||
-type==="outline"&&color==="violet" && outlineViolet ||
-type==="solid"&&color==="red" && solidRed ||
-type==="outline"&&color==="red" && outlineRed ||
-type==="solid"&&color==="yellow" && solidYellow 
+  const classButton =
+    (type === "solid" && color === "violet" && solidViolet) ||
+    (type === "outline" && color === "violet" && outlineViolet) ||
+    (type === "solid" && color === "red" && solidRed) ||
+    (type === "outline" && color === "red" && outlineRed) ||
+    (type === "solid" && color === "yellow" && solidYellow);
 
   return (
     <button
       type="button"
       // работает на storybook
-      className={[ classes.button, "button", classButton, buttonWithIcon]
-      .join(" ")}
+      className={[classes.button, "button", classButton, buttonWithIcon].join(
+        " "
+      )}
       {...props}
     >
       {icon && <img src={icon} />}
-      {console.log("classButton", classButton, )}
+      {console.log("classButton", classButton)}
       <p>{children}</p>
     </button>
   );
