@@ -13,11 +13,21 @@ import  Button  from '../Button/Button';
   const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
   export const Primary = Template.bind({});
-  // More on args: https://storybook.js.org/docs/react/writing-stories/args
+  
   Primary.args = {
   children: 'knopka',
   icon: 'static/media/src/stories/assets/icons/broadcast_icon.png' || 'static/media/src/stories/assets/icons/google_icon.png'
   };
+
+
+
+
+
+
+
+
+
+
 // import React from 'react';
 // import { ComponentStory, ComponentMeta } from '@storybook/react';
 

@@ -64,7 +64,7 @@ p .text-error {
   line-height: 20px;
 }
 .input::placeholder {
-color:#424242;
+color: #424242;
 }
 .input::content{
   border: 1px solid #757575;

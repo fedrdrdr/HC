@@ -1,41 +1,49 @@
-import React from 'react';
+import React, { FC } from "react";
 import classes from "./Input.module.css";
 
-
 export interface InputProps {
-    children: string;
-    label?: string;
-    icon?: string;
-    placeholder?: string;
-    errorText?: string;
-    size?: 
-    | "xl"
-    | "l"
-    | "m"
-    | "s";
+  children?: string;
+  label?: string;
+  icon?: string;
+  placeholder?: string;
+  errorText?: string;
+  size?: "xl" | "l" | "m" | "s";
+  type?: "text" | "password" | "email";
 }
- const Input: React.FC<InputProps> = ({
-        size='l', label, placeholder,icon,errorText, children
-    }) => {
-
-
-
-    return (
-        <>
-        {label
-        ? 
-        <label>
+const Input: React.FC<InputProps> = ({
+  size = "l",
+  label,
+  placeholder = "placeholder",
+  icon,
+  errorText,
+  children,
+  type = "text",
+}) => {
+  return (
+    <>
+      {
+        label ? (
+          <label>
             <p>{label}</p>
-            <input placeholder={placeholder} className={[classes.input, classes[size]].join(" ")} defaultValue={children} />
-                
-        </label>
-        :
-        <input placeholder={placeholder} className={classes.input} value={children} />
-            // {children}
-       
-        }
-        </>
-    );
+            <input
+              type={type}
+              className={[classes.input, classes[size]].join(" ")}
+              placeholder={placeholder}
+              defaultValue={children}
+            />
+          </label>
+        ) : (
+          <input
+            type={type}
+            placeholder={placeholder}
+            className={classes.input}
+            value={children}
+          />
+        )
+        // {children}
+      }
+    </>
+  );
 };
 
-export default Input
+export default Input;

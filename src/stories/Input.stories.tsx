@@ -1,6 +1,5 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-
 import   Input  from '../Input/Input';
 
 
@@ -17,8 +16,9 @@ export default {
 const Template: ComponentStory<typeof Input> = (args) => <Input {...args} />;
 
 export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
+
 Primary.args = {
 children: '',
-icon: 'static/media/src/stories/assets/icons/broadcast_icon.png'
+icon: 'static/media/src/stories/assets/icons/broadcast_icon.png',
+placeholder: 'qw'
 };
