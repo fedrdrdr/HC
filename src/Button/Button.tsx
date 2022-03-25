@@ -18,6 +18,7 @@ export interface ButtonProps {
   children: string;
   icon?: string;
   onClick?: () => void;
+  // onClick: React.MouseEventHandler<HTMLButtonElement>;
 }
 
 // export interface ButtonProps {

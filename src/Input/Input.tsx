@@ -3,12 +3,7 @@ import classes from "./Input.module.css";
 
 
 export interface InputProps {
-    className?:
-    | "solidViolet"
-    | "outlineViolet"
-    | "solidYellow"
-    | "solidRed"
-    | "outlineRed";
+    children: string;
     label?: string;
     icon?: string;
     placeholder?: string;
@@ -20,7 +15,7 @@ export interface InputProps {
     | "s";
 }
  const Input: React.FC<InputProps> = ({
-        size='l', label, placeholder,icon,errorText
+        size='l', label, placeholder,icon,errorText, children
     }) => {
 
 
@@ -31,12 +26,14 @@ export interface InputProps {
         ? 
         <label>
             <p>{label}</p>
-            <input placeholder={placeholder} className={[classes.input, classes[size]].join(" ")} >
-            </input>
+            <input placeholder={placeholder} className={[classes.input, classes[size]].join(" ")} defaultValue={children} />
+                
         </label>
         :
-        <input placeholder={placeholder} className={classes.input} >
-        </input>}
+        <input placeholder={placeholder} className={classes.input} value={children} />
+            // {children}
+       
+        }
         </>
     );
 };
