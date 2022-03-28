@@ -1,7 +1,7 @@
 {
   "name": "fedrdrdrtest",
   "private": false,
-  "version": "0.0.36",
+  "version": "0.0.42",
   "description": "",
   "main": "dist/index.js",
   "scripts": {

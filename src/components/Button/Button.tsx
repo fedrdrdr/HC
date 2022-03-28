@@ -14,9 +14,13 @@ export interface ButtonProps {
   color?: "violet" | "red" | "yellow";
   children?: string;
   icon?: string;
-  onClick?: () => void;
-  // onClick: React.MouseEventHandler<HTMLButtonElement>;
+  // onClick?: () => void;
+  className?: string;
+  // onClick?: (event?: React.MouseEvent<any>) => void;
+  // onClick?: MouseEvent<any, MouseEvent> => void;
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
+
 
 
 
@@ -26,6 +30,7 @@ const Button: React.FC<ButtonProps> = ({
   icon,
   children,
   onClick,
+  className,
   ...props
 }) => {
   const buttonWithIcon = ("" && !icon) || (classes.buttonWithIcon && icon);
@@ -40,8 +45,9 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <button
       type="button"
+      onClick={onClick}
       // работает на storybook
-      className={[classes.button, "button", classButton, buttonWithIcon].join(
+      className={[classes.button, "button", classButton, buttonWithIcon, className].join(
         " "
       )}
       {...props}
