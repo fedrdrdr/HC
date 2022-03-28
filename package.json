@@ -9,7 +9,7 @@
     "build": "webpack",
     "sb": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "deploy-storybook": "npm run build-storybook && gh-pages -d storybook-static"
+    "deploy-sb": "npm run build-storybook && gh-pages -d storybook-static"
   },
   "keywords": [],
   "author": "",

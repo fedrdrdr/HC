@@ -29,15 +29,14 @@ const Input: React.FC<InputProps> = ({
               type={type}
               className={[classes.input, classes[size]].join(" ")}
               placeholder={placeholder}
-              defaultValue={children}
             />
           </label>
         ) : (
           <input
             type={type}
             placeholder={placeholder}
-            className={classes.input}
-            value={children}
+            className={[classes.input, classes[size]].join(" ")}
+            
           />
         )
         // {children}
