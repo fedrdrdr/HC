@@ -1,7 +1,7 @@
-import Button from './Button/Button';
+import Button from './components/Button/Button';
 import styles from './styles/styles'
-import Input from './Input/Input';
-import Accordion from './Accordion/Accordion';
+import Input from './components/Input/Input';
+import Accordion from './components/Accordion/Accordion';
 
 export {
     Button,

@@ -2,7 +2,6 @@ import React, { FC } from "react";
 import classes from "./Input.module.css";
 
 export interface InputProps {
-  children?: string;
   label?: string;
   icon?: string;
   placeholder?: string;
@@ -16,7 +15,6 @@ const Input: React.FC<InputProps> = ({
   placeholder = "placeholder",
   icon,
   errorText,
-  children,
   type = "text",
 }) => {
   return (

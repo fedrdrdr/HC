@@ -59,3 +59,36 @@
 .my5 {
     margin: 20px 0;
 }
+
+
+.p1 {
+    padding: 4px;
+}
+.p2 {
+    padding: 8px;
+}
+.p3 {
+    padding: 12px;
+}
+.p4 {
+    padding: 16px;
+}
+.p5 {
+    padding: 20px;
+}
+
+.m1 {
+    margin: 4px;
+}
+.m2 {
+    margin: 8px;
+}
+.m3 {
+    margin: 12px;
+}
+.m4 {
+    margin: 16px;
+}
+.m5 {
+    margin: 20px;
+}
