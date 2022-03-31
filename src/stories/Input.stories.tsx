@@ -5,10 +5,10 @@ import   Input  from '../components/Input/Input';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Example/Input',
-  component: Input,
+    title: 'Example/Input',
+    component: Input,
 
-  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
+    // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
 
 } as ComponentMeta<typeof Input>;
 
@@ -18,6 +18,6 @@ const Template: ComponentStory<typeof Input> = (args) => <Input {...args} />;
 export const Primary = Template.bind({});
 
 Primary.args = {
-icon: 'static/media/src/stories/assets/broadcast_icon.svg',
-placeholder: 'Введите текст....'
+    icon: 'static/media/src/stories/assets/broadcast_icon.svg',
+    placeholder: 'Введите текст....'
 };

@@ -1,29 +1,29 @@
 import React from 'react';
-import AccordionItem ,{AccordionEntry} from './AccordionItem'
-import classes from "./Accordion.module.css";
+import AccordionItem ,{AccordionEntry} from './AccordionItem';
+import classes from './Accordion.module.css';
 
 export interface AccordionProps {
 
   items: AccordionEntry[];
 }
 const Accordion: React.FC<AccordionProps> = ({
-  items
+    items
 }) => {
 
 
 
-  return (
-    <ul className={classes.list}>
-      {items.map(el =>
-        <AccordionItem
-          title={el.title}
-          content={el.content}
-          key={el.content}
-        />
+    return (
+        <ul className={classes.list}>
+            {items.map(el =>
+                <AccordionItem
+                    title={el.title}
+                    content={el.content}
+                    key={el.content}
+                />
 
-      )}
-    </ul>
-  );
+            )}
+        </ul>
+    );
 };
 
-export default Accordion
+export default Accordion;

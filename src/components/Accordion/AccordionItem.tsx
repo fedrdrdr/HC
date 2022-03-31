@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import classes from "./Accordion.module.css";
+import React, { useEffect, useState } from 'react';
+import classes from './Accordion.module.css';
 
 export interface AccordionEntry {
   title: string;
@@ -7,19 +7,19 @@ export interface AccordionEntry {
 }
 
 function AccordionItem({ title,content }:AccordionEntry) {
-  const [active, setActive] = useState(false);
+    const [active, setActive] = useState(false);
 
-  function clickHandler() {
-    setActive(!active);
-  }
+    function clickHandler() {
+        setActive(!active);
+    }
 
-  useEffect(() => {}, [active]);
-  return (
-    <li  className={classes.title} onClick={clickHandler}>
-      <p>{title}</p>
-      {active && <p className={classes.content}>{content}</p>}
-    </li>
-  );
+    useEffect(() => {}, [active]);
+    return (
+        <li  className={classes.title} onClick={clickHandler}>
+            <p>{title}</p>
+            {active && <p className={classes.content}>{content}</p>}
+        </li>
+    );
 }
 
 export default AccordionItem;
