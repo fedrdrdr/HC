@@ -6,7 +6,8 @@ const outlineViolet = classes.outlineViolet;
 const solidYellow = classes.solidYellow;
 const solidRed = classes.solidRed;
 const outlineRed = classes.outlineRed;
-
+const flatViolet = classes.flatViolet;
+const flatRed = classes.flatRed;
 
 
 export interface ButtonProps {
@@ -42,7 +43,10 @@ const Button: React.FC<ButtonProps> = ({
     (variant === 'outline' && color === 'violet' && outlineViolet) ||
     (variant === 'solid' && color === 'red' && solidRed) ||
     (variant === 'outline' && color === 'red' && outlineRed) ||
-    (variant === 'solid' && color === 'yellow' && solidYellow);
+    (variant === 'solid' && color === 'yellow' && solidYellow) ||
+    (variant === 'flat' && color === 'violet' && flatViolet) ||
+    (variant === 'flat' && color === 'red' && flatRed) 
+    ;
 
     return (
         <button

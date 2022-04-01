@@ -47,6 +47,16 @@ button p {
     color: #762B71;
 }
 
+.flatViolet {
+    background: none;
+    color: #94368D;
+}
+.flatViolet:hover {
+    background: #FFFFFF;
+}
+.flatViolet:active {
+    background: #FFFFFF;
+}
 
 .solidYellow {
     background-color: #FFB71B;
@@ -93,3 +103,12 @@ button p {
     color: #CF3642;
 }
 
+.flatRed {
+    color: #CF3642;
+}
+.flatRed:hover {
+    background-color: #FFFFFF;
+}
+.flatRed:active {
+    background-color: #FFFFFF;
+}
