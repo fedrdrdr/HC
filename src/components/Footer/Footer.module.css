@@ -1,0 +1,12 @@
+.wrapper {
+    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 32px;
+    padding: 15px 20px;
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 452px;
+    background: #292929;
+;
+}

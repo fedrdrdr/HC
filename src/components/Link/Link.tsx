@@ -11,6 +11,7 @@ export interface LinkProps {
     className?: string;
     color?: 'black' | 'blue' | 'violet' | 'white' ;
     icon?: string;
+    style?:React.CSSProperties;
   }
 
 

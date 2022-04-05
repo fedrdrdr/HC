@@ -5,6 +5,7 @@ A:hover	Определяет стиль для ссылки при наведе�
 */
 .link {
     padding: 1px 0;
+    margin: 24px;
     text-decoration: none;
     font-size: 14px;
     /* line-height: 20px; */

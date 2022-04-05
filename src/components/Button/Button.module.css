@@ -1,5 +1,5 @@
 .button {
-    padding: 20px 40px;
+    /*padding: 20px 40px;*/
     box-sizing: border-box;
     border: none;
     outline: none;
@@ -8,40 +8,41 @@
     justify-content: center;
     align-items: center;
     border-radius: 12px;
-    min-width: 131px;
-    height: 64px;
+    /*min-width: 131px;*/
     background-color: transparent;
 }
-.buttonWithIcon {
-    min-width: 163px;
-}
+
+/*.buttonWithIcon {*/
+/*    !*min-width: 163px;*!*/
+/*}*/
+
 button img {
     margin: 0 8px 0 0;
 }
-button p {
-    font-weight:  400;
-    font-size: 16px;
-    line-height: 24px;
-}
+
 .solidViolet {
     background-color: #94368D;
-    color:white;
+    color: white;
 }
+
 .solidViolet:hover {
     background-color: #85317F;
 }
+
 .solidViolet:active {
     background-color: #762B71;
 }
 
 .outlineViolet {
     border: 1px solid #94368D;
-    color:#94368D;
+    color: #94368D;
 }
+
 .outlineViolet:hover {
     border: 1px solid #CA9BC6;
     color: #94368D;
 }
+
 .outlineViolet:active {
     border: 1px solid #DFC3DD;
     color: #762B71;
@@ -51,22 +52,71 @@ button p {
     background: none;
     color: #94368D;
 }
+
 .flatViolet:hover {
     background: #FFFFFF;
 }
+
 .flatViolet:active {
     background: #FFFFFF;
 }
 
 .solidYellow {
     background-color: #FFB71B;
-    color:#0F0F0F;
+    color: #0F0F0F;
 }
+
 .solidYellow:hover {
     background-color: #E6A518;
 }
+
 .solidYellow:active {
     background-color: #CC9216;
+}
+
+.buttonXs {
+    padding: 6px 12px;
+    width: 68px;
+    height: 32px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.buttonS {
+    padding: 8px 16px;
+    width: 83px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.buttonM {
+    padding: 12px 24px;
+    width: 99px;
+    height: 48px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.buttonL {
+    padding: 16px 32px;
+    width: 115px;
+    height: 56px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.buttonXl {
+    padding: 20px 40px;
+    width: 131px;
+    height: 64px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 /* .outline-yellow {
@@ -81,11 +131,13 @@ button p {
 
 .solidRed {
     background-color: #CF3642;
-    color:white;
+    color: white;
 }
+
 .solidRed:hover {
     background-color: #BA313B;
 }
+
 .solidRed:active {
     background-color: #A62B35;
 }
@@ -94,10 +146,12 @@ button p {
     border: 1px solid #CF3642;
     color: #CF3642;
 }
+
 .outlineRed:hover {
     border: 1px solid #E79BA1;
     color: #CF3642;
 }
+
 .outlineRed:active {
     border: 1px solid #F1C3C6;
     color: #CF3642;
@@ -106,9 +160,11 @@ button p {
 .flatRed {
     color: #CF3642;
 }
+
 .flatRed:hover {
     background-color: #FFFFFF;
 }
+
 .flatRed:active {
     background-color: #FFFFFF;
 }

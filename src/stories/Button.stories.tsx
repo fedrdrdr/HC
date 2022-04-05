@@ -5,18 +5,16 @@ import  Button  from '../components/Button/Button';
 export default {
     title: 'Example/Button',
     component: Button,
-
-  
 } as ComponentMeta<typeof Button>;
 
 
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
+const Template: ComponentStory<typeof Button> = (args) => <Button {...args}/>;
 
 export const Primary = Template.bind({});
-
 Primary.args = {
-    children: 'knopka',
-    icon: '/img/broadcast_icon.svg' || '/img/broadcast_icon.svg'
+    children: 'Button',
+    size: "M",
+    // icon: '/img/broadcast_icon.svg' || '/img/broadcast_icon.svg'
 };
 
 
