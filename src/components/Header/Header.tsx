@@ -1,6 +1,8 @@
-import React, {ReactChild, ReactElement, ReactNode} from 'react';
-import  Button from '../Button/Button';
+import React, {ReactChild, ReactElement, ReactNode} from "react";
+import  Button from "../Button/Button";
 import "./header.css";
+import  {ReactComponent as Logo}from "../../stories/assets/logo.svg";
+
 import { Link as RouterLink } from "react-router-dom";
 import Link from "../Link/Link";
 // import logo from "./assets/logo.svg"
@@ -15,13 +17,13 @@ export interface HeaderProps {
   style?:React.CSSProperties;
 }
 
-const logo = require("../../stories/assets/logo.svg") as string;
+// const logo = require("../../stories/assets/logo.svg") as string;
 
 export const Header = ({ children, accountElements, style }: HeaderProps) => (
     <header>
         <div className="container">
             <div>
-                <img src={logo} alt="alt" />
+                <Logo/>
             </div>
             <div>
                 <nav className="nav">

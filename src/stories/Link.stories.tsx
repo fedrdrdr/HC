@@ -1,25 +1,26 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
-import  Link  from '../components/Link/Link';
+import React from "react";
+import { ComponentStory, ComponentMeta } from "@storybook/react";
+import  Link  from "../components/Link/Link";
+import {ReactComponent as BriefcaseIcon} from "./assets/icons/briefcase.svg";
+import {ReactComponent as DatabaseIcon} from "./assets/icons/database.svg";
+
 export default {
-    title: 'Example/Link',
+    title: "Example/Link",
     component: Link,
 
   
 } as ComponentMeta<typeof Link>;
 
-const briefcase = require("./assets/icons/briefcase.svg") as string;
-const database = require("./assets/icons/database.svg") as string;
-
-
 const Template: ComponentStory<typeof Link> = (args) =>
     <>
-        <div><Link startIcon={briefcase} {...args}/></div>
         <div><Link {...args}/></div>
-        <div><Link {...args} endIcon={database}/></div>
+        <div><Link {...args}/></div>
+        <div><Link {...args}/></div>
     </>;
 export const Primary = Template.bind({});
 
 Primary.args = {
-    children: 'Link style',
+    children: "Link style",
+    startIcon:<BriefcaseIcon/>,
+    endIcon:<DatabaseIcon/>,
 };

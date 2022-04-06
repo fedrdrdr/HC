@@ -1,5 +1,5 @@
-import React, {FC, ReactElement} from 'react';
-import classes from './Button.module.css';
+import React, { ReactElement} from "react";
+import classes from "./Button.module.css";
 // import './Button.module.css';
 
 const solidViolet = classes.solidViolet;
@@ -9,14 +9,15 @@ const solidRed = classes.solidRed;
 const outlineRed = classes.outlineRed;
 const flatViolet = classes.flatViolet;
 const flatRed = classes.flatRed;
+const flatBlack = classes.flatBlack;
 
 
 export interface ButtonProps {
-  variant?: 'solid' | 'outline' | 'flat';
-  color?: 'violet' | 'red' | 'yellow';
+  variant?: "solid" | "outline" | "flat";
+  color?: "violet" | "red" | "yellow"| "black";
   children?: ReactElement|string;
   icon?: string;
-  type?: 'button' | 'submit' | 'reset'
+  type?: "button" | "submit" | "reset"
   // onClick?: () => void;
   className?: string;
   // onClick?: (event?: React.MouseEvent<any>) => void;
@@ -31,22 +32,22 @@ export interface ButtonProps {
 const Button = ({
     children,
     onClick,
-    variant = 'solid',
-    color = 'violet',
+    variant = "solid",
+    color = "violet",
     size,
 }: ButtonProps) => {
     // const buttonWithIcon = ('' && !icon) || (classes.buttonWithIcon && icon);
     // const classButton = classes[className];
     const classButton =
-        (variant === 'solid' && color === 'violet' && solidViolet) ||
-        (variant === 'outline' && color === 'violet' && outlineViolet) ||
-        (variant === 'solid' && color === 'red' && solidRed) ||
-        (variant === 'outline' && color === 'red' && outlineRed) ||
-        (variant === 'solid' && color === 'yellow' && solidYellow) ||
-        (variant === 'flat' && color === 'violet' && flatViolet) ||
-        (variant === 'flat' && color === 'red' && flatRed)
+        (variant === "solid" && color === "violet" && solidViolet) ||
+        (variant === "outline" && color === "violet" && outlineViolet) ||
+        (variant === "solid" && color === "red" && solidRed) ||
+        (variant === "outline" && color === "red" && outlineRed) ||
+        (variant === "solid" && color === "yellow" && solidYellow) ||
+        (variant === "flat" && color === "violet" && flatViolet) ||
+        (variant === "flat" && color === "red" && flatRed)|| (variant === "flat" && color === "black" && flatBlack);
 
-    const getClassBySize = (size) => {
+    const getClassBySize = (size:string|undefined) => {
         switch (size) {
             case "Xs":
                 return classes.buttonXs;
@@ -60,16 +61,16 @@ const Button = ({
                 return classes.buttonXl;
 
         }
-    }
+    };
 
-    console.log(size, getClassBySize(size))
+    console.log(size, getClassBySize(size));
     return (
         <button
             // type={type}
             onClick={onClick}
             // работает на storybook
-            className={[classes.button, 'button',getClassBySize(size) ,classButton].join(
-                ' '
+            className={[classes.button, "button",getClassBySize(size) ,classButton].join(
+                " "
             )}
         >
             {children}

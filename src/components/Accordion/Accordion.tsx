@@ -1,6 +1,6 @@
-import React from 'react';
-import AccordionItem ,{AccordionEntry} from './AccordionItem';
-import classes from './Accordion.module.css';
+import React from "react";
+import AccordionItem ,{AccordionEntry} from "./AccordionItem";
+import classes from "./Accordion.module.css";
 
 export interface AccordionProps {
 

@@ -38,6 +38,7 @@ A:hover	Определяет стиль для ссылки при наведе�
 }
 
 .violet {
+    color: #94368D;
     border-bottom: 1px solid #DFC3DD;
 }
 .violet:hover {

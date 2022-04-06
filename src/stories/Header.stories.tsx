@@ -1,11 +1,11 @@
-import React from 'react';
-import {ComponentStory, ComponentMeta} from '@storybook/react';
-import {Header} from '../components/Header/Header';
+import React from "react";
+import {ComponentStory, ComponentMeta} from "@storybook/react";
+import {Header} from "../components/Header/Header";
 import Link from "../components/Link/Link";
 import Button from "../components/Button/Button";
 
 export default {
-    title: 'Example/Header',
+    title: "Example/Header",
     component: Header,
     // parameters: {
     // // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout
@@ -15,9 +15,9 @@ export default {
 
 const Template: ComponentStory<typeof Header> = (args) => <Header {...args} >
     <>
-        <Button variant={"flat"}>Events</Button>
-        <Button variant={"flat"}>Events</Button>
-        <Button variant={"flat"}>Events</Button>
+        <Button variant={"flat"} size={"S"} color={"black"}>Events</Button>
+        <Button variant={"flat"} size={"S"} color={"black"}>Events</Button>
+        <Button variant={"flat"} size={"S"} color={"black"}>Events</Button>
     </>
 </Header>;
 
