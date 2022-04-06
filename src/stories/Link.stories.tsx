@@ -1,7 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import  Link  from '../components/Link/Link';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 export default {
     title: 'Example/Link',
     component: Link,
@@ -9,21 +8,18 @@ export default {
   
 } as ComponentMeta<typeof Link>;
 
+const briefcase = require("./assets/icons/briefcase.svg") as string;
+const database = require("./assets/icons/database.svg") as string;
+
 
 const Template: ComponentStory<typeof Link> = (args) =>
     <>
-        <p style={{fontSize:'14px', height:'24px'}}> вот тут ссылка &nbsp;
-            <Link {...args}
-            />
-        </p>
-        <p>и тут</p>
-        <Link {...args}
-        />
-
+        <div><Link startIcon={briefcase} {...args}/></div>
+        <div><Link {...args}/></div>
+        <div><Link {...args} endIcon={database}/></div>
     </>;
 export const Primary = Template.bind({});
 
 Primary.args = {
-    children: 'ссылка',
-
+    children: 'Link style',
 };

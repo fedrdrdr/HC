@@ -76,7 +76,7 @@ button img {
 
 .buttonXs {
     padding: 6px 12px;
-    width: 68px;
+    min-width: 68px;
     height: 32px;
     font-weight: 400;
     font-size: 14px;
@@ -85,7 +85,7 @@ button img {
 
 .buttonS {
     padding: 8px 16px;
-    width: 83px;
+    min-width: 83px;
     height: 40px;
     font-weight: 400;
     font-size: 16px;
@@ -94,7 +94,7 @@ button img {
 
 .buttonM {
     padding: 12px 24px;
-    width: 99px;
+    min-width: 99px;
     height: 48px;
     font-weight: 400;
     font-size: 16px;
@@ -103,7 +103,7 @@ button img {
 
 .buttonL {
     padding: 16px 32px;
-    width: 115px;
+    min-width: 115px;
     height: 56px;
     font-weight: 400;
     font-size: 16px;
@@ -112,7 +112,7 @@ button img {
 
 .buttonXl {
     padding: 20px 40px;
-    width: 131px;
+    min-width: 131px;
     height: 64px;
     font-weight: 400;
     font-size: 16px;

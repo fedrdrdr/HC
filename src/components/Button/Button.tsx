@@ -14,7 +14,7 @@ const flatRed = classes.flatRed;
 export interface ButtonProps {
   variant?: 'solid' | 'outline' | 'flat';
   color?: 'violet' | 'red' | 'yellow';
-  children?: string;
+  children?: ReactElement|string;
   icon?: string;
   type?: 'button' | 'submit' | 'reset'
   // onClick?: () => void;
@@ -68,7 +68,7 @@ const Button = ({
             // type={type}
             onClick={onClick}
             // работает на storybook
-            className={[classes.button, 'button', getClassBySize(size) ,classButton].join(
+            className={[classes.button, 'button',getClassBySize(size) ,classButton].join(
                 ' '
             )}
         >

@@ -45,5 +45,8 @@
     "react": "*",
     "react-dom": "*",
     "react-router-dom": "*"
+  },
+  "dependencies": {
+    "react-scripts": "^5.0.0"
   }
 }

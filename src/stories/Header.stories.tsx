@@ -15,9 +15,9 @@ export default {
 
 const Template: ComponentStory<typeof Header> = (args) => <Header {...args} >
     <>
-        <Link>Events</Link>
-        <Link>Events</Link>
-        <Link>Events</Link>
+        <Button variant={"flat"}>Events</Button>
+        <Button variant={"flat"}>Events</Button>
+        <Button variant={"flat"}>Events</Button>
     </>
 </Header>;
 
