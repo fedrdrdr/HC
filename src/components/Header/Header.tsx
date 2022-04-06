@@ -1,7 +1,7 @@
 import React, {ReactChild, ReactElement, ReactNode} from "react";
 import  Button from "../Button/Button";
-import "./header.css";
-import  {ReactComponent as Logo}from "../../stories/assets/logo.svg";
+import "./Header.module.css";
+import  {ReactComponent as Logo}from "../../stories/assets/logo_dark.svg";
 
 import { Link as RouterLink } from "react-router-dom";
 import Link from "../Link/Link";

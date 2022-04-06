@@ -13,14 +13,14 @@ export default {
 
 const Template: ComponentStory<typeof Link> = (args) =>
     <>
+        <div><Link startIcon={<BriefcaseIcon/>} {...args}/></div>
         <div><Link {...args}/></div>
-        <div><Link {...args}/></div>
-        <div><Link {...args}/></div>
+        <div><Link endIcon={<DatabaseIcon/>} {...args}/></div>
     </>;
 export const Primary = Template.bind({});
 
 Primary.args = {
     children: "Link style",
-    startIcon:<BriefcaseIcon/>,
-    endIcon:<DatabaseIcon/>,
+    // startIcon:<BriefcaseIcon/>,
+    // endIcon:<DatabaseIcon/>,
 };

@@ -4,9 +4,13 @@ A:active	Определяет стиль для активной ссылки. �
 A:hover	Определяет стиль для ссылки при наведении на нее мышью. 
 */
 .link {
+    display: flex;
+    justify-content: space-between;
     padding: 1px 0;
+    max-width: 85px; /*todo*/
     text-decoration: none;
     font-size: 14px;
+    border-bottom: 1px solid #DBDBDB;
     /* line-height: 20px; */
 }
 .link:hover {
