@@ -1,5 +1,5 @@
 .container {
-  font-family: 'Inter',  sans-serif;
+  font-family: 'Inter',  sans-serif  !important;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -7,6 +7,9 @@
   /*padding-bottom: 20px;*/
   /*padding-top: 20px;*/
   background: #F5F5F5;
+  padding-left: 28px;
+  padding-right: 28px;
+  font-weight: 400  !important;
 ;
 }
 
@@ -48,5 +51,8 @@
 
 .buttons {
   grid-column: 10/12;
+}
+.icon{
+  height: 40px;
 }
 

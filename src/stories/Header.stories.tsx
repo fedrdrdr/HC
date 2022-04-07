@@ -20,9 +20,6 @@ const Template: ComponentStory<typeof Header> = (args) => <Header {...args} >
 export const LoggedIn = Template.bind({});
 LoggedIn.args = {
     accountElements: <>
-        {/*<span className="welcome">*/}
-        {/*    Welcome, <b>Joe Doe</b>!*/}
-        {/*</span>*/}
         <Button size={"S"}>out</Button>
     </>
 };

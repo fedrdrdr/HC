@@ -7,7 +7,7 @@ A:hover	Определяет стиль для ссылки при наведе�
     display: flex;
     justify-content: space-between;
     padding: 1px 0;
-    max-width: 85px; /*todo*/
+    /*min-width: 85px; !*todo*!*/
     text-decoration: none;
     font-size: 14px;
     border-bottom: 1px solid #DBDBDB;
@@ -23,7 +23,9 @@ A:hover	Определяет стиль для ссылки при наведе�
 /*    !* line-height: 30px; *!*/
 /*}*/
 
-
+.none_border{
+    border-bottom: none !important;
+}
 .black {
     color: #0F0F0F;
     border-bottom: 1px solid #DBDBDB;

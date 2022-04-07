@@ -1,13 +1,17 @@
-import React from "react";
+import React, {ReactElement} from "react";
 import classes from "./Footer.module.css";
 import  {ReactComponent as Logo}from "../../stories/assets/logo_light.svg";
-import Link from "../Link/Link";
 
-
-const Footer = () => {
+export interface FooterProps {
+    contactsInfo?: ReactElement;
+    productInfo?: ReactElement;
+    companyInfo?: ReactElement;
+    rightsInfo?:ReactElement;
+}
+const Footer = ({contactsInfo, companyInfo, productInfo, rightsInfo}:FooterProps) => {
     return(
         <div className={classes.container}>
-            <div className={classes.content__box}>
+            <div className={classes.content__box1}>
             <div>
                 <Logo className={classes.logo}/>
             </div>
@@ -15,15 +19,17 @@ const Footer = () => {
                 We use our social media to share useful stuff and updates, so why not join?
             </div>
                 <div className={classes.content__boxRow}>
-                    <div className={classes.content__box_social}>
-                        <div className={classes.contact__item}>LinkedIn</div>
-                        <div className={classes.contact__item}>Facebook</div>
-                    </div>
-                    <div className={classes.content__box_social}>
-                        <div className={classes.contact__item}><Link color={"white"}>Twitter</Link></div>
-                        <div className={classes.contact__item}>Instagram</div>
-                    </div>
+                    {contactsInfo}
                 </div>
+            </div>
+            <div className={classes.content__box2}>
+                {productInfo}
+            </div>
+            <div className={classes.content__box2}>
+                {companyInfo}
+            </div>
+            <div className={classes.content__box3}>
+                {rightsInfo}
             </div>
         </div>
     );

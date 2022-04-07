@@ -1,11 +1,8 @@
 import React, {ReactChild, ReactElement, ReactNode} from "react";
 import  Button from "../Button/Button";
-import "./Header.module.css";
+import classes from  "./Header.module.css";
 import  {ReactComponent as Logo}from "../../stories/assets/logo_dark.svg";
 
-import { Link as RouterLink } from "react-router-dom";
-import Link from "../Link/Link";
-// import logo from "./assets/logo.svg"
 
 type User = {
   name: string;
@@ -17,16 +14,15 @@ export interface HeaderProps {
   style?:React.CSSProperties;
 }
 
-// const logo = require("../../stories/assets/logo.svg") as string;
 
-export const Header = ({ children, accountElements, style }: HeaderProps) => (
+export const Header = ({ children, accountElements }: HeaderProps) => (
     <header>
-        <div className="container">
-            <div>
+        <div className={classes.container}>
+            <div style={{height:40}}>
                 <Logo/>
             </div>
             <div>
-                <nav className="nav">
+                <nav className={classes.nav}>
                     {children}
                 </nav>
             </div>
