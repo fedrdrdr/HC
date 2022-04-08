@@ -1,0 +1,62 @@
+/*
+A:link	Определяет стиль для обычной непосещенной ссылки.
+A:active	Определяет стиль для активной ссылки. Активной ссылка становится при нажатии на нее.
+A:hover	Определяет стиль для ссылки при наведении на нее мышью. 
+*/
+.link {
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 0;
+    /*min-width: 85px; !*todo*!*/
+    text-decoration: none;
+    font-size: 14px;
+    border-bottom: 1px solid #DBDBDB;
+    /* line-height: 20px; */
+}
+.link:hover {
+    cursor: pointer;
+    /* line-height: 24px; */
+
+}
+/*.link:active {*/
+/*    font-size: 20px;*/
+/*    !* line-height: 30px; *!*/
+/*}*/
+
+.none_border{
+    border-bottom: none !important;
+}
+.black {
+    color: #0F0F0F;
+    border-bottom: 1px solid #DBDBDB;
+}
+.black:hover {
+    border-bottom: 1px solid #A8A8A8;
+}
+
+.blue {
+    color: #1B63FF;
+    border-bottom: 1px solid #B3CAFE;
+}
+
+.blue:hover {
+    border-bottom: 1px solid #3E7AFC;
+}
+
+.violet {
+    color: #94368D;
+    border-bottom: 1px solid #DFC3DD;
+}
+.violet:hover {
+    border-bottom: 1px solid #B472AF;
+}
+
+.white {
+    color: #FFFFFF;
+    border-bottom: 1px solid #DBDBDB;
+}
+.white:hover {
+    border-bottom: 1px solid #A8A8A8;
+}
+
+

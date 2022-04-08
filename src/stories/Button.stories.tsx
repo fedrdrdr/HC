@@ -1,23 +1,31 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
-import  Button  from '../Button/Button';
+import React from "react";
+import { ComponentStory, ComponentMeta } from "@storybook/react";
+import  Button  from "../components/Button/Button";
 
-  export default {
-    title: 'Example/Button',
+export default {
+    title: "Example/Button",
     component: Button,
-
-  
-  } as ComponentMeta<typeof Button>;
+} as ComponentMeta<typeof Button>;
 
 
-  const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
+const Template: ComponentStory<typeof Button> = (args) => <Button {...args}/>;
 
-  export const Primary = Template.bind({});
-  // More on args: https://storybook.js.org/docs/react/writing-stories/args
-  Primary.args = {
-  children: 'knopka',
-  icon: 'static/media/src/stories/assets/icons/broadcast_icon.png' || 'static/media/src/stories/assets/icons/google_icon.png'
-  };
+export const Primary = Template.bind({});
+Primary.args = {
+    children: "Button",
+    size: "M",
+    // icon: '/img/broadcast_icon.svg' || '/img/broadcast_icon.svg'
+};
+
+
+
+
+
+
+
+
+
+
 // import React from 'react';
 // import { ComponentStory, ComponentMeta } from '@storybook/react';
 

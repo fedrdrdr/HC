@@ -1,0 +1,58 @@
+.container {
+  font-family: 'Inter',  sans-serif  !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  /*padding-bottom: 20px;*/
+  /*padding-top: 20px;*/
+  background: #F5F5F5;
+  padding-left: 28px;
+  padding-right: 28px;
+  font-weight: 400  !important;
+;
+}
+
+/*svg {*/
+/*  height: 34px;*/
+/*  width: 118px;*/
+/*}*/
+
+/*h1 {*/
+/*  font-weight: 900;*/
+/*  font-size: 20px;*/
+/*  line-height: 1;*/
+/*  margin: 6px 0 6px 10px;*/
+/*  display: inline-block;*/
+/*  vertical-align: top;*/
+/*}*/
+
+/*button + button {*/
+/*  margin-left: 10px;*/
+/*}*/
+
+.welcome {
+  color: #333;
+  font-size: 14px;
+  margin-right: 10px;
+}
+.link {
+  grid-column: 1/3;
+
+}
+
+.nav {
+  display: flex;
+  min-width: 250px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons {
+  grid-column: 10/12;
+}
+.logo{
+  height: 40px;
+  grid-column:1;
+}
+
