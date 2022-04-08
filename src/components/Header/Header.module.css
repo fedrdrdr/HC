@@ -42,8 +42,7 @@
 }
 
 .nav {
-  /*grid-column: 4/9;*/
-  display:flex;
+  display: flex;
   min-width: 250px;
   justify-content: space-between;
   align-items: center;
@@ -52,7 +51,8 @@
 .buttons {
   grid-column: 10/12;
 }
-.icon{
+.logo{
   height: 40px;
+  grid-column:1;
 }
 

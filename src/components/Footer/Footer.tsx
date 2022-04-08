@@ -10,6 +10,7 @@ export interface FooterProps {
 }
 const Footer = ({contactsInfo, companyInfo, productInfo, rightsInfo}:FooterProps) => {
     return(
+        <footer>
         <div className={classes.container}>
             <div className={classes.content__box1}>
             <div>
@@ -32,6 +33,7 @@ const Footer = ({contactsInfo, companyInfo, productInfo, rightsInfo}:FooterProps
                 {rightsInfo}
             </div>
         </div>
+        </footer>
     );
 };
 export default Footer;

@@ -18,7 +18,7 @@ export interface HeaderProps {
 export const Header = ({ children, accountElements }: HeaderProps) => (
     <header>
         <div className={classes.container}>
-            <div style={{height:40}}>
+            <div className={classes.logo}>
                 <Logo/>
             </div>
             <div>
