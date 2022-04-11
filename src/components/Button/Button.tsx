@@ -16,7 +16,7 @@ const outlineGreen = classes.outlineGreen;
 
 const flatViolet = classes.flatViolet;
 const flatRed = classes.flatRed;
-const flatBlack = classes.flatBlack;
+const flatWhite = classes.flatWhite;
 const flatGreen = classes.flatGreen;
 
 export interface ButtonProps {
@@ -61,7 +61,7 @@ const Button = ({
         (variant === "flat" && color === "violet" && flatViolet) ||
         (variant === "flat" && color === "red" && flatRed)|| 
         (variant === "flat" && color === "green" && flatGreen) ||
-        (variant === "flat" && color === "black" && flatBlack);
+        (variant === "flat" && color === "white" && flatWhite);
 
     const getClassBySize = (size:string|undefined) => {
         switch (size) {
