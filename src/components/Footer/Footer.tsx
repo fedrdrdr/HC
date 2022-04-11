@@ -8,8 +8,9 @@ export interface FooterProps {
     productInfo?: ReactElement;
     companyInfo?: ReactElement;
     rightsInfo?:ReactElement;
+    className?:string;
 }
-const Footer = ({contactsInfo, companyInfo, productInfo, rightsInfo}:FooterProps) => {
+const Footer = ({contactsInfo, companyInfo, productInfo, rightsInfo,className}:FooterProps) => {
     return(
         <div className={classes.container}>
             <footer className={classes.footer}>
