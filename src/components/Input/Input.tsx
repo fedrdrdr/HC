@@ -1,22 +1,22 @@
-import React, { FC } from 'react';
-import classes from './Input.module.css';
+import React, { FC } from "react";
+import classes from "./Input.module.css";
 
 export interface InputProps {
   label?: string;
   icon?: string;
   placeholder?: string;
   errorText?: string;
-  size?: 'xl' | 'l' | 'm' | 's';
-  type?: 'text' | 'password' | 'email';
+  size?: "xl" | "l" | "m" | "s";
+  type?: "text" | "password" | "email";
   className?: string;  
 }
 const Input: React.FC<InputProps> = ({
-    size = 'l',
+    size = "l",
     label,
-    placeholder = 'placeholder',
+    placeholder = "placeholder",
     icon,
     errorText,
-    type = 'text',
+    type = "text",
     className,
 }) => {
     return (
@@ -27,7 +27,7 @@ const Input: React.FC<InputProps> = ({
                         <p>{label}</p>
                         <input
                             type={type}
-                            className={[classes.input, classes[size], className].join(' ')}
+                            className={[classes.input, classes[size], className].join(" ")}
                             placeholder={placeholder}
                         />
                     </label>
@@ -35,7 +35,7 @@ const Input: React.FC<InputProps> = ({
                     <input
                         type={type}
                         placeholder={placeholder}
-                        className={[classes.input, classes[size], className].join(' ')}
+                        className={[classes.input, classes[size], className].join(" ")}
             
                     />
                 )
