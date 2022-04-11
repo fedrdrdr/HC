@@ -73,6 +73,10 @@ button img {
 .solidYellow:active {
     background-color: #CC9216;
 }
+.flatBlack{
+    color: #0F0F0F;
+    font-weight: 400;
+}
 
 .buttonXs {
     padding: 6px 12px;

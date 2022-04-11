@@ -1,37 +1,42 @@
-const path = require('path');
+const path = require("path");
 
 
 module.exports = {
-    mode: 'production',
-    entry: './src/index.ts',
+    mode: "production",
+    entry: "./src/index.ts",
     output: {
         filename: "index.js",
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, "dist"),
         libraryTarget: "umd",
         clean: true
     },
     resolve: {
-        extensions: ['.ts', '.tsx']
+        extensions: [".ts", ".tsx"]
     },
     externals: {
-        react: 'react'
+        react: "react"
     },
     module: {
         rules: [
             {
                 test: /\.css/,
-                use: ['style-loader', 'css-loader'],
+                use: ["style-loader", "css-loader"],
             },
             {
                 test: /\.(ts|tsx)?$/,
-                use: ['ts-loader'],
+                use: ["ts-loader"],
                 exclude: /node_modules/
             },
             {
                 test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
-                type: 'asset/resource',
+                type: "asset/resource",
             },
+            {
+                test: /\.svg$/i,
+                use: ["@svgr/webpack", "file-loader"],
+
+            }
         ]
 
     }
-}
+};

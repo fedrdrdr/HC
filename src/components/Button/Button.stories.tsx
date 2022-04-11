@@ -1,9 +1,9 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
-import  Button  from '../components/Button/Button';
+import React from "react";
+import { ComponentStory, ComponentMeta } from "@storybook/react";
+import  Button  from "./Button";
 
 export default {
-    title: 'Example/Button',
+    title: "Example/Button",
     component: Button,
 } as ComponentMeta<typeof Button>;
 
@@ -12,7 +12,7 @@ const Template: ComponentStory<typeof Button> = (args) => <Button {...args}/>;
 
 export const Primary = Template.bind({});
 Primary.args = {
-    children: 'Button',
+    children: "Button",
     size: "M",
     // icon: '/img/broadcast_icon.svg' || '/img/broadcast_icon.svg'
 };
