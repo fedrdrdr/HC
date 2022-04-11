@@ -251,3 +251,14 @@ button img {
 .flatWhite:active {
   background-color: #292929;
 }
+.flatBlack {
+  color: #292929;
+}
+
+.flatBlack:hover {
+  background-color: #FFFFFF;
+}
+
+.flatBlack:active {
+  background-color: #FFFFFF;
+}

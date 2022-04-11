@@ -18,6 +18,7 @@ const flatViolet = classes.flatViolet;
 const flatRed = classes.flatRed;
 const flatWhite = classes.flatWhite;
 const flatGreen = classes.flatGreen;
+const flatBlack = classes.flatBlack;
 
 export interface ButtonProps {
   variant?: "solid" | "outline" | "flat";
@@ -61,6 +62,7 @@ const Button = ({
         (variant === "flat" && color === "violet" && flatViolet) ||
         (variant === "flat" && color === "red" && flatRed)|| 
         (variant === "flat" && color === "green" && flatGreen) ||
+        (variant === "flat" && color === "black" && flatBlack) ||
         (variant === "flat" && color === "white" && flatWhite);
 
     const getClassBySize = (size:string|undefined) => {
