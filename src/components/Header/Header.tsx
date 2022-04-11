@@ -13,12 +13,13 @@ export interface HeaderProps {
   children?: ReactElement;
   accountElements?: ReactElement;
   style?:React.CSSProperties;
+  className?:string;
 }
 
 
 export const Header = ({ children, accountElements }: HeaderProps) => (
-    <header>
         <div className={classes.container}>
+            <header className={classes.header}>
             <div className={classes.logo}>
                 <LogoDark/>
             </div>
@@ -27,9 +28,9 @@ export const Header = ({ children, accountElements }: HeaderProps) => (
                     {children}
                 </nav>
             </div>
-            <div>
+            <div className={classes.buttons}>
                 {accountElements}
             </div>
+            </header>
         </div>
-    </header>
 );

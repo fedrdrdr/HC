@@ -1,8 +1,8 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import  Link  from "../Link/Link";
-import {ReactComponent as BriefcaseIcon} from "../../../assets/icons/briefcase.svg";
-import {ReactComponent as DatabaseIcon} from "../../../assets/icons/database.svg";
+import  Link  from "./Link";
+import {BriefcaseIcon} from "../Icons/BriefcaseIcon";
+import {DatabaseIcon} from "../Icons/DatabaseIcon";
 
 export default {
     title: "Example/Link",
@@ -13,9 +13,13 @@ export default {
 
 const Template: ComponentStory<typeof Link> = (args) =>
     <>
+        <div style={{display:"flex", flexDirection: "column", alignItems: "flex-start"}}>
         <div><Link startIcon={<BriefcaseIcon/>} {...args}/></div>
         <div><Link {...args}/></div>
         <div><Link endIcon={<DatabaseIcon/>} {...args}/></div>
+        <div><Link endIcon={<DatabaseIcon/>} startIcon={<BriefcaseIcon/>} {...args}/></div>
+        <div><Link nonUnderline {...args}/></div>
+        </div>
     </>;
 export const Primary = Template.bind({});
 

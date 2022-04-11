@@ -14,6 +14,9 @@ const Template: ComponentStory<typeof Header> = (args) => <Header {...args} >
         <Button variant={"flat"} size={"S"} color={"black"}>Events</Button>
         <Button variant={"flat"} size={"S"} color={"black"}>Events</Button>
         <Button variant={"flat"} size={"S"} color={"black"}>Events</Button>
+        <Button variant={"flat"} size={"S"} color={"black"}>Events</Button>
+        <Button variant={"flat"} size={"S"} color={"black"}>Events</Button>
+        <Button variant={"flat"} size={"S"} color={"black"}>Events</Button>
     </>
 </Header>;
 
