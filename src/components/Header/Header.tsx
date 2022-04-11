@@ -1,7 +1,8 @@
 import React, {ReactChild, ReactElement, ReactNode} from "react";
 import  Button from "../Button/Button";
 import classes from  "./Header.module.css";
-import  {ReactComponent as Logo}from "../../stories/assets/logo_dark.svg";
+import {LogoDark} from "../Icons/LogoDark";
+// import  {ReactComponent as Logo} from "../../stories/assets/logo_dark.svg";
 
 
 type User = {
@@ -19,7 +20,7 @@ export const Header = ({ children, accountElements }: HeaderProps) => (
     <header>
         <div className={classes.container}>
             <div className={classes.logo}>
-                <Logo/>
+                <LogoDark/>
             </div>
             <div>
                 <nav className={classes.nav}>

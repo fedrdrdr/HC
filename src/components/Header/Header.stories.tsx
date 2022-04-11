@@ -1,8 +1,8 @@
 import React from "react";
 import {ComponentStory, ComponentMeta} from "@storybook/react";
-import {Header} from "../components/Header/Header";
-import Link from "../components/Link/Link";
-import Button from "../components/Button/Button";
+import {Header} from "./Header";
+import Link from "../Link/Link";
+import Button from "../Button/Button";
 
 export default {
     title: "Example/Header",
