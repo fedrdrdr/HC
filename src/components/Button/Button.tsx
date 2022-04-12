@@ -45,6 +45,7 @@ const Button = ({
 }: ButtonProps) => {
     // const buttonWithIcon = ('' && !icon) || (classes.buttonWithIcon && icon);
     // const classButton = classes[className];
+
     const classButton =
         (variant === "solid" && color === "violet" && solidViolet) ||
         (variant === "solid" && color === "red" && solidRed) ||
