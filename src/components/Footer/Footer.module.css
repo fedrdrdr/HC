@@ -145,5 +145,8 @@
     .content__box2{
         margin-bottom: 36px;
     }
+    .footer{
+        flex-wrap: wrap;
+    }
 
 }
