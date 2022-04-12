@@ -5,6 +5,8 @@ import Accordion from "./components/Accordion/Accordion";
 import Link from "./components/Link/Link";
 import {Header} from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import Icons from "../src/components/Icons/Icons";
+
 
 export {
     Button,
@@ -13,5 +15,6 @@ export {
     Link,
     Footer,
     Header,
+    Icons,
     styles,
 };
