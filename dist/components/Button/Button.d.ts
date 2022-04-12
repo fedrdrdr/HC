@@ -1,7 +1,7 @@
 import React, { ReactElement } from "react";
 export interface ButtonProps {
     variant?: "solid" | "outline" | "flat";
-    color?: "violet" | "red" | "yellow" | "black";
+    color?: "violet" | "red" | "yellow" | "black" | "white" | "green";
     children?: ReactElement | string;
     icon?: string;
     type?: "button" | "submit" | "reset";
