@@ -4,6 +4,7 @@ export interface LinkProps {
     path?: string;
     className?: string;
     color?: "black" | "blue" | "violet" | "white";
+    size?: "s" | "m" | "l";
     startIcon?: ReactElement;
     endIcon?: ReactElement;
     style?: React.CSSProperties;

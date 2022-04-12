@@ -1,0 +1,20 @@
+.menuList {
+ display: flex;
+ flex-direction: column; 
+}
+.title{
+  color: #0F0F0F;
+}
+.title:hover {
+  color: #94368D;;
+}
+.title:active {
+  color: #762B71;;
+}
+
+.m {
+  font-size: 16px;
+}
+.l {
+  font-size: 20px;
+}
