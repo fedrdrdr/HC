@@ -7,6 +7,7 @@ export interface LinkProps {
     path?: string;
     className?: string;
     color?: "black" | "blue" | "violet" | "white" ;
+    size?: "s" | "m" | "l";
     startIcon?: ReactElement;
     endIcon?: ReactElement;
     style?:React.CSSProperties;
@@ -14,7 +15,7 @@ export interface LinkProps {
   }
 
 
-const Link: React.FC<LinkProps> = ({path="#", className, children, color="black",startIcon, endIcon, nonUnderline }) => {
+const Link: React.FC<LinkProps> = ({path="#", className, size="s", children, color="black",startIcon, endIcon, nonUnderline }) => {
 
     const nonUnderlineLink = (nonUnderline:boolean|undefined) => {
         switch (nonUnderline) {
@@ -27,7 +28,7 @@ const Link: React.FC<LinkProps> = ({path="#", className, children, color="black"
 
     if (startIcon){
         return (
-                <a href={path} className={[classes.link, classes[color],nonUnderlineLink(nonUnderline), className].join(" ")} >
+                <a href={path} className={[classes.link, classes[size], classes[color],nonUnderlineLink(nonUnderline), className].join(" ")} >
                     {startIcon}<div/>{children}
                 </a>
         );

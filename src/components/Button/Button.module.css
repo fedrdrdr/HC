@@ -123,15 +123,31 @@ button img {
     line-height: 24px;
 }
 
-/* .outline-yellow {
-
+.solidWhite {
+  background-color: #FFFFFF;
+  color: #0F0F0F;
 }
-.outline-yellow:hover {
 
+.solidWhite:hover {
+  background-color: #F5F5F5;
 }
-.outline-yellow:active {
 
-} */
+.solidWhite:active {
+  background-color: #DBDBDB;
+}
+
+.solidGreen {
+  background-color: #00AF9E;
+  color: #FFFFFF;
+}
+
+.solidGreen:hover {
+  background-color: #009E8E;
+}
+
+.solidGreen:active {
+  background-color: #008C7E;
+}
 
 .solidRed {
     background-color: #CF3642;
@@ -171,4 +187,78 @@ button img {
 
 .flatRed:active {
     background-color: #FFFFFF;
+}
+
+
+
+.outlineBlack {
+  border: 1px solid #0F0F0F;
+  color: #0F0F0F;
+}
+
+.outlineBlack:hover {
+  border: 1px solid #C2C2C2;
+}
+
+.outlineBlack:active {
+  border: 1px solid #DBDBDB;
+}
+.outlineWhite {
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+}
+
+.outlineWhite:hover {
+  border: 1px solid #C2C2C2;
+}
+
+.outlineWhite:active {
+  border: 1px solid #DBDBDB;
+}
+.outlineGreen {
+  border: 1px solid #00AF9E;
+  color: #00AF9E;
+}
+
+.outlineGreen:hover {
+  border: 1px solid #80D7CF;
+}
+
+.outlineGreen:active {
+  border: 1px solid #B3E7E2;
+}
+
+.flatGreen {
+  color: #00AF9E;
+}
+
+.flatGreen:hover {
+  background-color: #FFFFFF;
+}
+
+.flatGreen:active {
+  background-color: #FFFFFF;
+}
+
+.flatWhite {
+  color: #FFFFFF;
+}
+
+.flatWhite:hover {
+  background-color: #424242;
+}
+
+.flatWhite:active {
+  background-color: #292929;
+}
+.flatBlack {
+  color: #292929;
+}
+
+.flatBlack:hover {
+  background-color: #FFFFFF;
+}
+
+.flatBlack:active {
+  background-color: #FFFFFF;
 }
