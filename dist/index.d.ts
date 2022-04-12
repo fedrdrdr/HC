@@ -5,4 +5,5 @@ import Accordion from "./components/Accordion/Accordion";
 import Link from "./components/Link/Link";
 import { Header } from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-export { Button, Input, Accordion, Link, Footer, Header, styles, };
+import Icons from "../src/components/Icons/Icons";
+export { Button, Input, Accordion, Link, Footer, Header, Icons, styles, };
