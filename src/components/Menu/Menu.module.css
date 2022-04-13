@@ -1,0 +1,41 @@
+.menuList {
+ display: flex;
+ flex-direction: column; 
+ padding:0;
+ margin:0;
+ list-style-type: none;
+}
+.head *{
+  padding:0;
+  margin:0;
+  color: #94368D;
+  stroke: #94368D;
+}
+.head:hover * {
+  color: #762B71;
+  stroke: #762B71;
+}
+.head:active * {
+  color: #592055;
+  stroke: #592055;
+}
+
+.m {
+  font-size: 16px;
+}
+.l {
+  font-size: 20px;
+}
+
+.head{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start
+}
+.head p {
+  margin-right: 8px;
+}
+.icon_rotate{
+  transform: rotate(90deg);
+}
