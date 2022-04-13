@@ -83,7 +83,7 @@
 
     }
 }
-@media screen and (min-width: 1441px) and (max-width: 1919px) {
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
     .footer {
         width: 1384px;
         padding: 54px 119px 37px 116px;
@@ -110,7 +110,7 @@
         max-width: 264px;
     }
 }
-@media screen and (min-width: 765px) and (max-width: 1440px)   {
+@media screen and (min-width: 764px) and (max-width: 1339px)   {
     .footer {
         width: 712px;
         max-height: 432px;
