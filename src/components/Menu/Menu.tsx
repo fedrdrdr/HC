@@ -19,15 +19,26 @@ const Menu = ({
 }: MenuProps) => {
   const [close, setClose] = useState(open);
   const [color, setColor] = useState("#0F0F0F");
+
+  function colorSet(color) {
+    if(color==="#0F0F0F"){
+      return color="#94368D";
+    }
+    if(color==="#94368D"){
+      return color="#0F0F0F";
+    }
+  }
   function onClickHandler() {
     setClose(!close);
     setColor("#94368D");
     console.log(color);
+    colorSet(color);
+    console.log(color);
   }
 
-  useEffect(()=>{
+  useEffect(() => {
     setColor("#94368D");
-  },[close]);
+  }, [close]);
   return (
     < >
       {close
@@ -39,7 +50,7 @@ const Menu = ({
           >
             {title}
           </p>
-          <span><More className={color} /> </span>
+          <span><More stroke={color} /> </span>
           <ul className={classes.menuList}>
             {children}
           </ul>
