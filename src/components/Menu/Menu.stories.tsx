@@ -13,8 +13,11 @@ export default {
 const Template: ComponentStory<typeof Menu> = (args) =>
     <>
         <div style={{display:"flex", flexDirection: "column", alignItems: "flex-start"}}>
-        <Menu {...args} />
-          <p>sdfsdfsdf</p>
+        <Menu title="sdfdf" size='l'>
+          <li>dfgfdg</li>
+          <li>sdgsd</li>
+        </Menu>
+          
         {/* </Menu> */}
         </div>
     </>;

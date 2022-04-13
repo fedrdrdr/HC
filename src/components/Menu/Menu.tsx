@@ -1,4 +1,4 @@
-import React, { ReactElement, useState } from "react";
+import React, { ReactElement, useEffect, useState } from "react";
 import { More } from "../Icons/More";
 import classes from "./Menu.module.css";
 
@@ -18,11 +18,16 @@ const Menu = ({
   size = "l",
 }: MenuProps) => {
   const [close, setClose] = useState(open);
-
+  const [color, setColor] = useState("#0F0F0F");
   function onClickHandler() {
     setClose(!close);
+    setColor("#94368D");
+    console.log(color);
   }
 
+  useEffect(()=>{
+    setColor("#94368D");
+  },[close]);
   return (
     < >
       {close
@@ -34,7 +39,7 @@ const Menu = ({
           >
             {title}
           </p>
-          <span><More fill={"#0F0F0F"} /> </span>
+          <span><More className={color} /> </span>
           <ul className={classes.menuList}>
             {children}
           </ul>
@@ -44,7 +49,7 @@ const Menu = ({
           <p onClick={onClickHandler}
             className={[classes.title, classes[size]].join(" ")}
           >{title}</p>
-          <span><More fill={"#94368D"} /> </span>
+          <span><More stroke={color} /> </span>
         </div>}
     </>
   );
