@@ -13,7 +13,7 @@ export default {
 const Template: ComponentStory<typeof Menu> = (args) =>
     <>
         <div style={{display:"flex", flexDirection: "column", alignItems: "flex-start"}}>
-        <Menu title="sdfdf" size='l'>
+        <Menu title="sdfdf" size='l' >
           <li>dfgfdg</li>
           <li>sdgsd</li>
         </Menu>
@@ -25,6 +25,5 @@ export const Primary = Template.bind({});
 
 Primary.args = {
     children: "trolololo",
-    // startIcon:<BriefcaseIcon/>,
-    // endIcon:<DatabaseIcon/>,
+
 };

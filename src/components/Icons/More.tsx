@@ -11,6 +11,6 @@ export const More = (props: SVGProps<SVGSVGElement>) => (
     <path d="M1 9L5 5L1 1" stroke={props.color} strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );
-console.log(More);
+console.log(More, );
 
 
