@@ -1,4 +1,4 @@
-import React, { ReactElement, useEffect, useState } from "react";
+import React, { ReactElement, useState } from "react";
 import { More } from "../Icons/More";
 import classes from "./Menu.module.css";
 
@@ -19,7 +19,7 @@ const Menu = ({
   size = "l",
 }: MenuProps) => {
   const [close, setClose] = useState(open);
-  const [color, setColor] = useState("#0F0F0F");
+  // const [color, setColor] = useState("#0F0F0F");
 
 
   function onClickHandler() {
