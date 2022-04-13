@@ -1,15 +1,23 @@
 .menuList {
  display: flex;
  flex-direction: column; 
+ padding:0;
+ margin:0;
+ list-style-type: none;
 }
-.title{
-  color: #0F0F0F;
+.head *{
+  padding:0;
+  margin:0;
+  color: #94368D;
+  stroke: #94368D;
 }
-.title:hover {
-  color: #94368D;;
+.head:hover * {
+  color: #762B71;
+  stroke: #762B71;
 }
-.title:active {
-  color: #762B71;;
+.head:active * {
+  color: #592055;
+  stroke: #592055;
 }
 
 .m {
@@ -27,4 +35,7 @@
 }
 .head p {
   margin-right: 8px;
+}
+.icon_rotate{
+  transform: rotate(90deg);
 }

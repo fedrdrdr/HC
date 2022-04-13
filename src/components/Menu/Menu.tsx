@@ -2,6 +2,7 @@ import React, { ReactElement, useEffect, useState } from "react";
 import { More } from "../Icons/More";
 import classes from "./Menu.module.css";
 
+
 export interface MenuProps {
   children?: ReactElement | string | ReactElement[];
   className?: string;
@@ -23,20 +24,15 @@ const Menu = ({
 
   function onClickHandler() {
     setClose(!close);
-    if (color === "#0F0F0F") {
-      setColor("#94368D");
-    }
-    if (color === "#94368D") {
-      setColor("#0F0F0F");
-    }
+    // if (color === "#0F0F0F") {
+    //   setColor("#94368D");
+    // }
+    // if (color === "#94368D") {
+    //   setColor("#0F0F0F");
+    // }
   }
-  useEffect(() => {
-    console.log(color);
 
-  }, [color]);
-  // useEffect(() => {
-  //   setColor();
-  // }, [close]);
+
   return (
     < >
       {close
@@ -49,7 +45,7 @@ const Menu = ({
             >
               {title}
             </p>
-            <More stroke={color} fill={color} />
+            <More  className={classes.icon_rotate}/>
           </div>
           <ul className={classes.menuList}>
             {children}
@@ -61,7 +57,7 @@ const Menu = ({
             <p onClick={onClickHandler}
               className={[classes.title, classes[size]].join(" ")}
             >{title}</p>
-            <More stroke={color} fill={color} />
+            <More />
           </div>
         </div>}
     </>
