@@ -6,7 +6,7 @@ import Link from "./components/Link/Link";
 import {Header} from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Icons from "../src/components/Icons/Icons";
-
+import Menu from "./components/Menu/Menu";
 
 export {
     Button,
@@ -15,6 +15,7 @@ export {
     Link,
     Footer,
     Header,
+    Menu,
     Icons,
     styles,
 };
