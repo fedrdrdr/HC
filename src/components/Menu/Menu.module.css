@@ -9,15 +9,15 @@
   padding:0;
   margin:0;
   color: #94368D;
-  stroke: #94368D;
+  /*stroke: #94368D;*/
 }
 .head:hover * {
   color: #762B71;
-  stroke: #762B71;
+  /*stroke: #762B71;*/
 }
 .head:active * {
   color: #592055;
-  stroke: #592055;
+  /*stroke: #592055;*/
 }
 
 .m {

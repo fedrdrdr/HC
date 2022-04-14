@@ -18,12 +18,11 @@ const Menu = ({
   open = false,
   size = "l",
 }: MenuProps) => {
-  const [close, setClose] = useState(open);
-  // const [color, setColor] = useState("#0F0F0F");
+  const [isOpen, setOpen] = useState(open);
 
 
   function onClickHandler() {
-    setClose(!close);
+    setOpen(!isOpen);
     // if (color === "#0F0F0F") {
     //   setColor("#94368D");
     // }
@@ -34,33 +33,20 @@ const Menu = ({
 
 
   return (
-    < >
-      {close
-        ?
-        <div>
-          <div className={classes.head}>
-            <p
-              onClick={onClickHandler}
+      <div>
+        <div className={classes.head} onClick={onClickHandler}>
+          <p
               className={[classes.title, classes[size]].join(" ")}
-            >
-              {title}
-            </p>
-            <More  className={classes.icon_rotate}/>
-          </div>
-          <ul className={classes.menuList}>
-            {children}
-          </ul>
+          >
+            {title}
+          </p>
+          <More stroke={isOpen? "red" : "#0F0F0F"}  className={isOpen? "" : classes.icon_rotate}/>
         </div>
-        :
-        <div>
-          <div className={classes.head}>
-            <p onClick={onClickHandler}
-              className={[classes.title, classes[size]].join(" ")}
-            >{title}</p>
-            <More />
-          </div>
-        </div>}
-    </>
+        {isOpen && <ul className={classes.menuList}>
+          {children}
+        </ul>
+        }
+      </div>
   );
 };
 
