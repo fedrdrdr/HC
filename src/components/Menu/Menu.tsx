@@ -9,17 +9,26 @@ export interface MenuProps {
   open?: boolean;
   title: string;
   size?: "l" | "m";
+  // todo
+  startIcon?: ReactElement;
+  endIcon?: "more" | "another";
   onClick?: () => void
 }
+
+
+const icons = {
+  more: More
+};
 
 const Menu = ({
   children,
   title,
   open = false,
   size = "l",
+  endIcon = "more",
 }: MenuProps) => {
   const [isOpen, setOpen] = useState(open);
-
+  const Icon = icons[endIcon];
 
   function onClickHandler() {
     setOpen(!isOpen);
@@ -30,23 +39,27 @@ const Menu = ({
     //   setColor("#0F0F0F");
     // }
   }
-
-
+  const rootClasses = {
+    "more": !isOpen ? "" : classes.icon_rotate,
+  };
+  const className = rootClasses[endIcon];
   return (
-      <div>
-        <div className={classes.head} onClick={onClickHandler}>
-          <p
-              className={[classes.title, classes[size]].join(" ")}
-          >
-            {title}
-          </p>
-          <More stroke={isOpen? "red" : "#0F0F0F"}  className={isOpen? "" : classes.icon_rotate}/>
-        </div>
-        {isOpen && <ul className={classes.menuList}>
-          {children}
-        </ul>
-        }
+    <div>
+      <div className={classes.head} onClick={onClickHandler}>
+        <p
+          className={[classes.title, classes[size]].join(" ")}
+        >
+          {title}
+        </p>
+        {/* todo */}
+        {/* {endIcon} */}
+        <Icon isOpen={isOpen} className={className} />
       </div>
+      {isOpen && <ul className={classes.menuList}>
+        {children}
+      </ul>
+      }
+    </div>
   );
 };
 
