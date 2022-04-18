@@ -11,7 +11,6 @@ const Accordion: React.FC<AccordionProps> = ({
 }) => {
 
 
-
     return (
         <ul className={classes.list}>
             {items.map(el =>

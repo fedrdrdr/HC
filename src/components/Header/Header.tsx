@@ -20,8 +20,8 @@ export interface HeaderProps {
 export const Header = ({ children, accountElements }: HeaderProps) => (
         <div className={classes.container}>
             <header className={classes.header}>
-            <div className={classes.logo}>
-                <LogoDark/>
+            <div >
+                <LogoDark className={classes.logo}/>
             </div>
             <div>
                 <nav className={classes.nav}>
