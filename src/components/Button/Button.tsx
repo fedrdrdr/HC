@@ -24,7 +24,8 @@ export interface ButtonProps {
   variant?: "solid" | "outline" | "flat";
   color?: "violet" | "red" | "yellow"| "black" | "white" | "green";
   children?: ReactElement|string;
-  icon?: string;
+  startIcon?: ReactElement|string;
+  endIcon?: ReactElement|string;
   type?: "button" | "submit" | "reset"
   // onClick?: () => void;
   className?: string;
@@ -43,9 +44,16 @@ const Button = ({
     variant = "solid",
     color = "violet",
     size,
+    startIcon, endIcon
+
+
 }: ButtonProps) => {
     // const buttonWithIcon = ('' && !icon) || (classes.buttonWithIcon && icon);
     // const classButton = classes[className];
+
+    switch (variant) {
+        case "solid":
+    }
 
     const classButton =
         (variant === "solid" && color === "violet" && solidViolet) ||
@@ -82,17 +90,18 @@ const Button = ({
         }
     };
 
-    console.log(size, getClassBySize(size));
     return (
         <button
-            // type={type}
             onClick={onClick}
-            // работает на storybook
             className={[classes.button, "button",getClassBySize(size) ,classButton].join(
                 " "
             )}
         >
+            {startIcon}
+            <div style={{marginRight:9}}/>
             {children}
+            <div style={{marginRight:9}}/>
+            {endIcon}
         </button>
     );
 };
