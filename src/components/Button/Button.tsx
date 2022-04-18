@@ -93,9 +93,10 @@ const Button = ({
     return (
         <button
             onClick={onClick}
-            className={[classes.button, "button",getClassBySize(size) ,classButton].join(
+            className={[classes.button, "button",getClassBySize(size), classes[variant], classes[color]].join(
                 " "
             )}
+
         >
             {startIcon}
             <div style={{marginRight:9}}/>

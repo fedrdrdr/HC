@@ -263,3 +263,23 @@ button img {
 .flatBlack:active {
   background-color: #FFFFFF;
 }
+
+.solid{
+    background-color: #94368D;
+    color: white;
+}
+.outline{
+    border: 1px solid #94368D;
+}
+.flat{
+    color: #0F0F0F;
+}
+.solid.red{
+    background: red;
+}
+.outline.red{
+    border-color:red;
+}
+.flat.red{
+    color: red;
+}
