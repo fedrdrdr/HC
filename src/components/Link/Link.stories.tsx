@@ -14,7 +14,7 @@ export default {
 const Template: ComponentStory<typeof Link> = (args) =>
     <>
         <div style={{display:"flex", flexDirection: "column", alignItems: "flex-start"}}>
-        <div><Link startIcon={<BriefcaseIcon/>} {...args}/></div>
+        <div><Link startIcon={<BriefcaseIcon />} {...args}/></div>
         <div><Link {...args}/></div>
         <div><Link endIcon={<DatabaseIcon/>} {...args}/></div>
         <div><Link endIcon={<DatabaseIcon/>} startIcon={<BriefcaseIcon/>} {...args}/></div>

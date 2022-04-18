@@ -9,21 +9,29 @@ export interface MenuProps {
   open?: boolean;
   title: string;
   size?: "l" | "m";
+  // todo
+  startIcon?: ReactElement;
+  endIcon?: "more" | "another";
   onClick?: () => void
 }
+
+
+const icons = {
+  more: More
+};
 
 const Menu = ({
   children,
   title,
   open = false,
   size = "l",
+  endIcon = "more",
 }: MenuProps) => {
-  const [close, setClose] = useState(open);
-  // const [color, setColor] = useState("#0F0F0F");
-
+  const [isOpen, setOpen] = useState(open);
+  const Icon = icons[endIcon];
 
   function onClickHandler() {
-    setClose(!close);
+    setOpen(!isOpen);
     // if (color === "#0F0F0F") {
     //   setColor("#94368D");
     // }
@@ -31,36 +39,27 @@ const Menu = ({
     //   setColor("#0F0F0F");
     // }
   }
-
-
+  const rootClasses = {
+    "more": !isOpen ? "" : classes.icon_rotate,
+  };
+  const className = rootClasses[endIcon];
   return (
-    < >
-      {close
-        ?
-        <div>
-          <div className={classes.head}>
-            <p
-              onClick={onClickHandler}
-              className={[classes.title, classes[size]].join(" ")}
-            >
-              {title}
-            </p>
-            <More  className={classes.icon_rotate}/>
-          </div>
-          <ul className={classes.menuList}>
-            {children}
-          </ul>
-        </div>
-        :
-        <div>
-          <div className={classes.head}>
-            <p onClick={onClickHandler}
-              className={[classes.title, classes[size]].join(" ")}
-            >{title}</p>
-            <More />
-          </div>
-        </div>}
-    </>
+    <div>
+      <div className={classes.head} onClick={onClickHandler}>
+        <p
+          className={[classes.title, classes[size]].join(" ")}
+        >
+          {title}
+        </p>
+        {/* todo */}
+        {/* {endIcon} */}
+        <Icon isOpen={isOpen} className={className} />
+      </div>
+      {isOpen && <ul className={classes.menuList}>
+        {children}
+      </ul>
+      }
+    </div>
   );
 };
 
