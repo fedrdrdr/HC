@@ -6,6 +6,7 @@ import {LinkedInIcon} from "./LinkedInIcon";
 import {LogoDark} from "./LogoDark";
 import {LogoLight} from "./LogoLight";
 import {TwitterIcon} from "./TwitterIcon";
+import {MenuBurgerIcon} from "./MenuBurgerIcon";
 
 export default {
     BriefcaseIcon,
@@ -15,5 +16,6 @@ export default {
     InstagramIcon,
     LinkedInIcon,
     LogoDark,
-    LogoLight
+    LogoLight,
+    MenuBurgerIcon
 };
