@@ -4,7 +4,7 @@ import  Menu  from "./Menu";
 import { More } from "../Icons/More";
 
 export default {
-    title: "Example/Menu",
+    title: "Menu",
     component: Menu,
 
   

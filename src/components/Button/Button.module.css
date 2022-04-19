@@ -264,22 +264,29 @@ button img {
   background-color: #FFFFFF;
 }
 
+
+
+/*todo classes как показано ниже*/
+
 .solid{
-    background-color: #94368D;
+    background: #94368D;
     color: white;
 }
 .outline{
     border: 1px solid #94368D;
+    color: #94368D;
 }
 .flat{
-    color: #0F0F0F;
+    color: #94368D;
 }
 .solid.red{
-    background: red;
+    background-color: #CF3642;
+    color: white;
 }
 .outline.red{
-    border-color:red;
+    border-color:#CF3642;
+    color: #CF3642;
 }
 .flat.red{
-    color: red;
+    color: #CF3642;
 }
