@@ -5,7 +5,7 @@ import {BriefcaseIcon} from "../Icons/BriefcaseIcon";
 import {DatabaseIcon} from "../Icons/DatabaseIcon";
 
 export default {
-    title: "Example/Link",
+    title: "Link",
     component: Link,
 
   
