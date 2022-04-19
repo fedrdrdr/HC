@@ -7,6 +7,7 @@ export {LogoDark} from "./LogoDark";
 export {LogoLight} from "./LogoLight";
 export {TwitterIcon} from "./TwitterIcon";
 export {MenuBurgerIcon} from "./MenuBurgerIcon";
+export {More} from "./More";
 
 // export default {
 //     BriefcaseIcon,

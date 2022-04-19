@@ -1,13 +1,21 @@
-.input {font-family: 'Inter', sans-serif;
+.input {
   border-radius: 12px;
   padding: 16px;
   border: 1px solid #c2c2c2;
   box-sizing: border-box;
   font-weight: 400;
+  position: relative;
+  z-index: 0 ;
+
 }
+.inputWithIcon {
+    padding-left: 48px;
+}
+
 .label {
     display: flex;
     flex-direction: column;
+    font-family: 'Inter', sans-serif;
 }
 /*.xl {*/
 /*  min-width: 279px;*/
@@ -37,6 +45,7 @@ input:hover{
 .filled{
     border: 1px solid #757575;
     color: black;
+    font-family: 'Inter', sans-serif;
 }
 
 .input.error{
@@ -45,6 +54,7 @@ input:hover{
 
 .textError {
     color: #CF3642;
+    font-family: 'Inter', sans-serif;
     word-wrap: break-word;
     max-width: 279px;
     font-size: 13px;
@@ -68,9 +78,17 @@ input:hover{
   line-height: 20px;
 }
 .input::placeholder {
-color: #424242;
+    color: #424242;
+    font-family: 'Inter', sans-serif;
 }
 .input::content{
   border: 1px solid #757575;
   color:#0F0F0F;
+}
+.icon {
+    position: absolute;
+    top:19px;
+    left: 19px;
+    z-index: 1;
+
 }
