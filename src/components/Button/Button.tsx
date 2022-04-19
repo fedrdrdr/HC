@@ -28,7 +28,7 @@ export interface ButtonProps {
   endIcon?: ReactElement|string;
   type?: "button" | "submit" | "reset"
   className?: string;
-  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  onClick?: () => void;
   size?:"xs"|"s" |"m" |"l" |"xl";
   style?:React.CSSProperties;
 
