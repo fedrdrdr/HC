@@ -2,6 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import   Input  from "./Input";
 import {FacebookIcon} from "../Icons/FacebookIcon";
+import {LinkedInIcon} from "../Icons/LinkedInIcon";
 
 export default {
     title: "Input",
@@ -15,6 +16,7 @@ export const Primary = Template.bind({});
 
 Primary.args = {
     placeholder: "Enter text...",
+    // startIcon:<LinkedInIcon/>
 };
 export const Error = Template.bind({});
 Error.args = {

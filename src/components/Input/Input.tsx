@@ -36,24 +36,26 @@ const Input: React.FC<InputProps> = ({
                         <p>{label}</p>
                         <input
                             type={type}
-                            className={[classes.input, classes[size],isFilled ? classes.filled : "", error && classes.error].join(" ")}
+                            className={[classes.input, classes[size],isFilled && classes.filled, error && classes.error].join(" ")}
                             placeholder={placeholder}
                             onError={onError}
-
                         />
+
                     </label>
                 ) : (
+                    <div style={{display:"flex", alignItems:"center"}}>
+                        <div className={classes.icon}>{startIcon}</div>
                     <input
                         type={type}
                         placeholder={placeholder}
-                        className={[classes.input, classes[size], isFilled ? classes.filled : "", error && classes.error].join(" ")}
+                        className={[classes.input, classes[size], isFilled && classes.filled, error && classes.error].join(" ")}
                         onChange={()=>{
                             setFilled(true);
                         }}
-            
+
                     />
+                    </div>
                 )
-                // {children}
             }
             {error && <div className={classes.textError}>{errorMessage}</div>}
         </>
