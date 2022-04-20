@@ -3,7 +3,7 @@ import classes from "./Link.module.css";
 
 export interface LinkProps {
 
-    children?: ReactElement|string;
+    children: ReactElement|string;
     path?: string;
     className?: string;
     color?: "black" | "blue" | "violet" | "white" ;
