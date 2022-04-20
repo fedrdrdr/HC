@@ -13,6 +13,8 @@ export interface InputProps {
   className?: string;
   onChange?: () => void;
   onError?: () => void;
+  value?: any;
+  ref?: React.LegacyRef<HTMLInputElement>
 }
 const Input: React.FC<InputProps> = ({
     size = "l",
@@ -25,7 +27,8 @@ const Input: React.FC<InputProps> = ({
     type = "text",
     className,
     onChange,
-    onError
+    onError,
+    ref
 }) => {
     const [isFilled, setFilled] = React.useState(false);
     return (
@@ -39,6 +42,7 @@ const Input: React.FC<InputProps> = ({
                             className={[classes.input, classes[size],isFilled && classes.filled, error && classes.error].join(" ")}
                             placeholder={placeholder}
                             onError={onError}
+                            ref={ref}
                         />
 
                     </label>
@@ -48,6 +52,8 @@ const Input: React.FC<InputProps> = ({
                     <input
                         type={type}
                         placeholder={placeholder}
+                        onError={onError}
+                        ref={ref}
                         className={[classes.input, classes[size], isFilled && classes.filled, error && classes.error].join(" ")}
                         onChange={()=>{
                             setFilled(true);
