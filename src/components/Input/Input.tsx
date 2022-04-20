@@ -13,6 +13,7 @@ export interface InputProps {
   className?: string;
   onChange?: () => void;
   onError?: () => void;
+  id?: string;
   value?: any;
   ref?: React.LegacyRef<HTMLInputElement>
 }
