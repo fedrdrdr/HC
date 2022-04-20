@@ -80,7 +80,18 @@ input:hover{
 .input::placeholder {
     color: #424242;
     font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
 }
+.input::-webkit-input-placeholder {
+    color: #424242;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
 .input::content{
   border: 1px solid #757575;
   color:#0F0F0F;
