@@ -47,7 +47,7 @@ const Menu = ({
     <div>
       <div className={classes.head} onClick={onClickHandler}>
         <p
-          className={[classes.title, classes[size]].join(" ")}
+          className={classes[size]}
         >
           {title}
         </p>
