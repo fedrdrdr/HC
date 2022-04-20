@@ -12,10 +12,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
+  height: 64px;
   background: #F5F5F5;
-  padding-left: 20px;
-  padding-right: 23px;
   font-weight: 400  !important;
 ;
 }
@@ -66,6 +64,7 @@
 @media screen and (min-width: 768px){
 .header{
   max-width: 768px;
+  height: 80px;
 }
   .logo{
     max-width: 118px;
