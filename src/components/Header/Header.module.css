@@ -7,7 +7,7 @@
 
 .header {
   width: 100%;
-  max-width: 320px;
+  /*max-width: 320px;*/
   font-family: 'Inter',  sans-serif  !important;
   display: flex;
   align-items: center;
@@ -63,7 +63,7 @@
 }
 @media screen and (min-width: 768px){
 .header{
-  max-width: 768px;
+  /*max-width: 768px;*/
   height: 80px;
 }
   .logo{
@@ -72,9 +72,6 @@
   }
 }
 @media screen and (min-width: 1440px){
-  .header{
-    max-width: 1440px;
-  }
   .nav{
     display: flex;
     justify-content: space-between;
@@ -85,9 +82,9 @@
   }
 }
 @media screen and (min-width: 1920px){
-  .header{
-    max-width: 1920px;
-  }
+  /*.header{*/
+  /*  max-width: 1920px;*/
+  /*}*/
 
 }
 
