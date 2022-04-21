@@ -33,6 +33,13 @@ const Input: React.FC<InputProps> = ({
     ref
 }) => {
     const [isFilled, setFilled] = React.useState(false);
+
+    const handleOnChange = (e: any) => {
+        if (onChange !== undefined) {
+            onChange(e);
+        }
+    };
+
     return (
         <>
             {
@@ -44,7 +51,7 @@ const Input: React.FC<InputProps> = ({
                             className={[classes.input, classes[size],isFilled && classes.filled, error && classes.error].join(" ")}
                             placeholder={placeholder}
                             onError={onError}
-                            onChange={onChange}
+                            onChange={handleOnChange}
                             value={value}
                         />
 
