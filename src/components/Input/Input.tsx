@@ -65,7 +65,7 @@ const Input: React.FC<InputProps> = ({
                         onError={onError}
                         value={value}
                         className={[classes.input, classes[size], isFilled && classes.filled, error && classes.error].join(" ")}
-                        onChange={onChange}
+                        onChange={handleOnChange}
 
                     />
                     </div>
