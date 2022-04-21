@@ -11,7 +11,7 @@ export interface InputProps {
   size?:  "l" | "m" | "s";
   type?: "text" | "password" | "email";
   className?: string;
-  onChange?: () => void;
+  onChange?: (e:React.ChangeEvent<HTMLInputElement>) => void;
   onError?: () => void;
   id?: string;
   value?: any;
@@ -26,6 +26,7 @@ const Input: React.FC<InputProps> = ({
     error,
     errorMessage,
     type = "text",
+    value,
     className,
     onChange,
     onError,
@@ -43,7 +44,8 @@ const Input: React.FC<InputProps> = ({
                             className={[classes.input, classes[size],isFilled && classes.filled, error && classes.error].join(" ")}
                             placeholder={placeholder}
                             onError={onError}
-                            ref={ref}
+                            onChange={onChange}
+                            value={value}
                         />
 
                     </label>
@@ -54,11 +56,9 @@ const Input: React.FC<InputProps> = ({
                         type={type}
                         placeholder={placeholder}
                         onError={onError}
-                        ref={ref}
+                        value={value}
                         className={[classes.input, classes[size], isFilled && classes.filled, error && classes.error].join(" ")}
-                        onChange={()=>{
-                            setFilled(true);
-                        }}
+                        onChange={onChange}
 
                     />
                     </div>
