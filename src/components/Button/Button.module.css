@@ -268,6 +268,7 @@ button img {
 
 /*todo classes как показано ниже*/
 
+/* red */
 .solid{
     background: #94368D;
     color: white;
@@ -283,10 +284,162 @@ button img {
     background-color: #CF3642;
     color: white;
 }
+.solid.red:hover {
+  background-color: #BA313B;
+}
+
+.solid.red:active {
+  background-color: #A62B35;
+}
 .outline.red{
     border-color:#CF3642;
     color: #CF3642;
 }
+.outline.red:hover {
+  border: 1px solid #E79BA1;
+  color: #CF3642;
+}
+
+.outline.red:active {
+  border: 1px solid #F1C3C6;
+  color: #CF3642;
+}
 .flat.red{
     color: #CF3642;
+}
+.flat.red:hover {
+  background-color: #FFFFFF;
+}
+.flat.red:active {
+  background-color: #FFFFFF;
+}
+
+/* violet */
+.solid.violet {
+  background-color: #94368D;
+  color: white;
+}
+.solid.violet:hover {
+  background-color: #85317F;
+}
+.solid.violet:active {
+  background-color: #762B71;
+}
+.outline.violet {
+  border: 1px solid #94368D;
+  color: #94368D;
+}
+.outline.violet:hover {
+  border: 1px solid #CA9BC6;
+  color: #94368D;
+}
+.outline.violet:active {
+  border: 1px solid #DFC3DD;
+  color: #762B71;
+}
+.flat.violet {
+  background: none;
+  color: #94368D;
+}
+.flat.violet:hover {
+  background: #FFFFFF;
+}
+.flat.violet:active {
+  background: #FFFFFF;
+}
+
+/* yellow */
+.solid.yellow {
+  background-color: #FFB71B;
+  color: #0F0F0F;
+}
+.solid.yellow:hover {
+  background-color: #E6A518;
+}
+.solid.yellow:active {
+  background-color: #CC9216;
+}
+
+/* black */
+.outline.black {
+  border: 1px solid #0F0F0F;
+  color: #0F0F0F;
+}
+.outline.black:hover {
+  border: 1px solid #C2C2C2;
+}
+.outline.black:active {
+  border: 1px solid #DBDBDB;
+}
+.flat.black {
+  color: #292929;
+}
+.flat.black:hover {
+  background-color: #FFFFFF;
+}
+.flat.black:active {
+  background-color: #FFFFFF;
+}
+
+/* white */
+.solid.white {
+  background-color: #FFFFFF;
+  color: #0F0F0F;
+}
+.solid.white:hover {
+  background-color: #F5F5F5;
+}
+.solid.white:active {
+  background-color: #DBDBDB;
+}
+.outline.white {
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+}
+.outline.white:hover {
+  border: 1px solid #C2C2C2;
+}
+.outline.white:active {
+  border: 1px solid #DBDBDB;
+}
+.flat.white {
+  color: #FFFFFF;
+}
+.flat.white:hover {
+  background-color: #424242;
+}
+.flat.white:active {
+  background-color: #292929;
+}
+
+/* green */
+
+.solid.green {
+  background-color: #00AF9E;
+  color: #FFFFFF;
+}
+.solid.green:hover {
+  background-color: #009E8E;
+}
+.solid.green:active {
+  background-color: #008C7E;
+}
+.outline.green {
+  border: 1px solid #00AF9E;
+  color: #00AF9E;
+}
+.outline.green:hover {
+  border: 1px solid #80D7CF;
+}
+.outline.green:active {
+  border: 1px solid #B3E7E2;
+}
+.flat.green {
+  color: #00AF9E;
+}
+.flat.green:hover {
+  background-color: #FFFFFF;
+}
+.flat.green:active {
+  background-color: #FFFFFF;
 }
