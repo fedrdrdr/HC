@@ -17,7 +17,7 @@ export interface HeaderProps {
 }
 
 
-export const Header = ({ children, accountElements }: HeaderProps) => (
+export const Header = ({ children, accountElements, className }: HeaderProps) => (
         <div className={classes.container}>
             <header className={classes.header}>
             <div >

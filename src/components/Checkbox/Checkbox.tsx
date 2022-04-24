@@ -15,21 +15,23 @@ export interface CheckboxProps {
     id?:string,
     required?: boolean,
     children?: ReactElement,
+    className?: string
 
 }
 const Checkbox: React.FC<CheckboxProps> = ({
-                                         size,
-                                         label,
-                                         icon,
-                                         checked,
-                                         checkedIcon,
-                                         onChange,
-                                         onClick,
-                                         id,
-                                         defaultChecked,
-                                         disabled,
-                                         required,
-                                         children}) => {
+     size,
+     label,
+     icon,
+     checked,
+     checkedIcon,
+     onChange,
+     onClick,
+        className,
+     id,
+     defaultChecked,
+     disabled,
+     required,
+     children}) => {
     return <input className={classes.default} type={"checkbox"}/>;
  };
 
