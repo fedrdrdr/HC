@@ -2,27 +2,29 @@ import React, {ReactElement} from "react";
 import classes from "../Textarea/Textarea.module.css";
 
 export interface TextareaProps {
+    name?: string;
     label?: string;
     placeholder?: string;
     error?: boolean;
     errorMessage?: string;
     className?: string;
-    onChange?: (e:React.ChangeEvent<HTMLTextAreaElement>) => void;
+    onChange?: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
     onError?: () => void;
     value?: any;
     maxLength: number
 }
-const Textarea: React.FC<TextareaProps> = ({
-                                         label,
-                                         placeholder = "placeholder",
-                                         error,
-                                         errorMessage,
-                                         value,
-                                         className,
-                                         onChange,
-                                         onError, maxLength
 
-                                     }) => {
+const Textarea: React.FC<TextareaProps> = ({
+    name,
+    label,
+    placeholder = "placeholder",
+    error,
+    errorMessage,
+    value,
+    className,
+    onChange,
+    onError, maxLength
+}) => {
 
     const handleOnChange = (e: any) => {
         if (onChange !== undefined) {
@@ -30,7 +32,7 @@ const Textarea: React.FC<TextareaProps> = ({
         }
     };
 
-    window.onload=function(){
+    window.onload = function () {
         const textarea: HTMLElement | null = document.querySelector("textarea");
         if (textarea) {
             textarea.addEventListener("keyup", e => {
@@ -48,12 +50,13 @@ const Textarea: React.FC<TextareaProps> = ({
             {
                 label ? (
                     <>
-                    <label>
-                        <p>
-                        {label}
-                        </p>
-                    </label>
+                        <label>
+                            <p>
+                                {label}
+                            </p>
+                        </label>
                         <textarea
+                            name={name}
                             className={[error && classes.error, className].join(" ")}
                             placeholder={placeholder}
                             onError={onError}
@@ -64,8 +67,9 @@ const Textarea: React.FC<TextareaProps> = ({
                     </>
 
                 ) : (
-                    <div style={{display:"flex", alignItems:"center"}}>
+                    <div style={{display: "flex", alignItems: "center"}}>
                         <textarea
+                            name={name}
                             placeholder={placeholder}
                             onError={onError}
                             value={value}
