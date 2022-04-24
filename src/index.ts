@@ -7,6 +7,7 @@ import {Header} from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import {InstagramIcon, TwitterIcon, DatabaseIcon, FacebookIcon, MenuBurgerIcon, BriefcaseIcon, LogoDark, LogoLight, LinkedInIcon, More} from "../src/components/Icons/Icons";
 import Menu from "./components/Menu/Menu";
+import Textarea from "./components/Textarea/Textarea";
 
 export {
     Button,
@@ -26,5 +27,6 @@ export {
     LogoLight,
     MenuBurgerIcon,
     More,
+    Textarea,
     styles,
 };
