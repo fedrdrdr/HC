@@ -40,7 +40,7 @@ const Button = ({
     variant = "solid",
     color = "violet",
     size,
-    startIcon, endIcon
+    startIcon, endIcon, className
 }: ButtonProps) => {
 
     // const classButton =
@@ -81,7 +81,7 @@ const Button = ({
     return (
         <button
             onClick={onClick}
-            className={[classes.button,getClassBySize(size), classes[variant], classes[color]].join(
+            className={[classes.button,getClassBySize(size), classes[variant], classes[color], className].join(
                 " "
             )}
         >

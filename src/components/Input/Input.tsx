@@ -48,7 +48,7 @@ const Input: React.FC<InputProps> = ({
                         <p>{label}</p>
                         <input
                             type={type}
-                            className={[classes.input, classes[size],isFilled && classes.filled, error && classes.error].join(" ")}
+                            className={[classes.input, classes[size],isFilled && classes.filled, error && classes.error, className].join(" ")}
                             placeholder={placeholder}
                             onError={onError}
                             onChange={handleOnChange}
