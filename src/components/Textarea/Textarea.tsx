@@ -23,13 +23,13 @@ const Textarea: React.FC<TextareaProps> = ({
                                          onError, maxLength
 
                                      }) => {
-    const [isFilled, setFilled] = React.useState(false);
 
     const handleOnChange = (e: any) => {
         if (onChange !== undefined) {
             onChange(e);
         }
     };
+
     window.onload=function(){
         const textarea: HTMLElement | null = document.querySelector("textarea");
         if (textarea) {
