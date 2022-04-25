@@ -1,0 +1,29 @@
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background: #ffe5e5;
+    padding: 12px;
+    color:#292929;
+    box-sizing: border-box;
+}
+.container.left{
+    border-radius: 2px 16px 16px 16px;
+}
+.container.right{
+    border-radius: 16px 2px 16px 16px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.name{
+    color: #94368D;
+    font-size: 13px;
+    line-height: 19px;
+}
+.message{
+
+}
