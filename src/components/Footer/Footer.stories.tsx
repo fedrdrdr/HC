@@ -7,7 +7,6 @@ import Link from "../Link/Link";
 // import {ReactComponent as Linkedin} from "../../public/linkedin.svg";
 // import {ReactComponent as Facebook} from "../../public/facebook.svg";
 // import {ReactComponent as Twitter} from "../../public/twitter.svg";
-// import {ReactComponent as Instagram} from "../../public/instagram.svg";
 export default {
     title: "Footer",
     component: Footer,
@@ -23,7 +22,7 @@ Primary.args = {
             <div className="contact__item"><Link color={"white"} nonUnderline>Facebook</Link></div>
         </div>
         <div className="content__box_social">
-            <div className="contact__item"><Link color={"white"} nonUnderline>Twitter</Link></div>
+            <div className="contact__item"><Link color={"white"} nonUnderline> Twitter</Link></div>
             <div className="contact__item"><Link color={"white"} nonUnderline>Instagram</Link></div>
         </div>
     </>,

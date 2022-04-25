@@ -1,0 +1,35 @@
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background: #FFFFFF;
+    color:#292929;
+    box-sizing: border-box;
+    padding: 12px 24px;
+}
+.container.left{
+    border-radius: 2px 16px 16px 16px;
+}
+.container.right{
+    border-radius: 16px 2px 16px 16px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 12px;
+    font-family: 'Inter', sans-serif;
+}
+.name{
+    color: #94368D;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 4px;
+}
+
+.message {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}

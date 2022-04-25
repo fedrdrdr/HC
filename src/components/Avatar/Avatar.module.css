@@ -1,0 +1,37 @@
+.avatar{
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.xs {
+    width: 32px;
+}
+
+.s {
+    width: 40px;
+}
+
+.m {
+    width: 48px;
+}
+
+.l {
+    width: 56px;
+}
+
+.xl {
+    width: 64px;
+}
+
+.badge{
+    position: absolute;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    background: #00AF9E;
+    right: 0;
+    bottom:0;
+    z-index: 1;
+    border: 1px solid #F5F5F5;
+
+}
