@@ -40,7 +40,6 @@ const Textarea: React.FC<TextareaProps> = ({
                 const target = e.target as Element;
                 const scHeight = target.scrollHeight;
                 textarea.style.height = `${scHeight}px`;
-                console.log("!!!", scHeight);
             });
         }
     };
