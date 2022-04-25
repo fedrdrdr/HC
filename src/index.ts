@@ -8,6 +8,8 @@ import Footer from "./components/Footer/Footer";
 import {InstagramIcon, TwitterIcon, DatabaseIcon, FacebookIcon, MenuBurgerIcon, BriefcaseIcon, LogoDark, LogoLight, LinkedInIcon, More} from "../src/components/Icons/Icons";
 import Menu from "./components/Menu/Menu";
 import Textarea from "./components/Textarea/Textarea";
+import Avatar from "./components/Avatar/Avatar";
+import Popover from "./components/Popover/Popover";
 
 export {
     Button,
@@ -28,5 +30,7 @@ export {
     MenuBurgerIcon,
     More,
     Textarea,
+    Avatar,
+    Popover,
     styles,
 };
