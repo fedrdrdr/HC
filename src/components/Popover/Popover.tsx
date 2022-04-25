@@ -4,7 +4,7 @@ import classes from "./Popover.module.css";
 export interface PopoverProps {
     name: string;
     message: string;
-    avatar: HTMLImageElement;
+    avatar: HTMLImageElement|ReactElement;
     className?:string;
     anchorOrigin: "right"|"left";
 }
@@ -19,13 +19,13 @@ const Popover: React.FC<PopoverProps> = ({
 
 
     return (
-       <div className={[className, classes[anchorOrigin]].join(" ")}>
-           <div>
+       <div className={[className, classes.container, classes[anchorOrigin]].join(" ")}>
+           <div >
                {avatar}
            </div>
-           <div>
-               <div>{name}</div>
-               <div>{message}</div>
+           <div className={classes.text}>
+               <div className={classes.name}>{name}</div>
+               <div className={classes.message}>{message}</div>
            </div>
        </div>
     );
