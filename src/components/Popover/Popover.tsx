@@ -8,6 +8,7 @@ export interface PopoverProps {
     className?:string;
     anchorOrigin: "right"|"left";
     children?:ReactElement;
+    style?:React.CSSProperties;
 }
 
 const Popover: React.FC<PopoverProps> = ({
@@ -16,12 +17,13 @@ const Popover: React.FC<PopoverProps> = ({
     message,
     avatar,
     anchorOrigin,
-    className
+    className,
+    style
     }) => {
 
 
     return (
-       <div className={[className, classes.container, classes[anchorOrigin]].join(" ")} >
+       <div className={[className, classes.container, classes[anchorOrigin]].join(" ")} style={style}>
            <div className={classes.profile}>
            <div>
                {avatar}
