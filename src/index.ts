@@ -5,7 +5,20 @@ import Accordion from "./components/Accordion/Accordion";
 import Link from "./components/Link/Link";
 import {Header} from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import {InstagramIcon, TwitterIcon, DatabaseIcon, FacebookIcon, MenuBurgerIcon, BriefcaseIcon, LogoDark, LogoLight, LinkedInIcon, More} from "../src/components/Icons/Icons";
+import {
+    InstagramIcon,
+    TwitterIcon,
+    DatabaseIcon,
+    FacebookIcon,
+    MenuBurgerIcon,
+    BriefcaseIcon,
+    LogoDark,
+    LogoLight,
+    LinkedInIcon,
+    More,
+    AttentionIcon,
+    CalendarIcon
+} from "../src/components/Icons/Icons";
 import Menu from "./components/Menu/Menu";
 import Textarea from "./components/Textarea/Textarea";
 import Avatar from "./components/Avatar/Avatar";
@@ -32,5 +45,7 @@ export {
     Textarea,
     Avatar,
     Popover,
+    AttentionIcon,
+    CalendarIcon,
     styles,
 };

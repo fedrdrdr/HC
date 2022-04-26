@@ -8,15 +8,5 @@ export {LogoLight} from "./LogoLight";
 export {TwitterIcon} from "./TwitterIcon";
 export {MenuBurgerIcon} from "./MenuBurgerIcon";
 export {More} from "./More";
-
-// export default {
-//     BriefcaseIcon,
-//     TwitterIcon,
-//     DatabaseIcon,
-//     FacebookIcon,
-//     InstagramIcon,
-//     LinkedInIcon,
-//     LogoDark,
-//     LogoLight,
-//     MenuBurgerIcon
-// };
+export {AttentionIcon} from "./AttentionIcon";
+export {CalendarIcon} from "./CalendarIcon";
