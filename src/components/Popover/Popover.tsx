@@ -19,7 +19,7 @@ const Popover: React.FC<PopoverProps> = ({
 
 
     return (
-       <div className={[className, classes.container, classes[anchorOrigin]].join(" ")}>
+       <div className={[className, classes.container, classes[anchorOrigin]].join(" ")} >
            <div >
                {avatar}
            </div>
