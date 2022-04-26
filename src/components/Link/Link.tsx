@@ -33,7 +33,7 @@ const Link = (props: LinkProps) => {
 
 
     return (
-        <span className={[
+        <div className={[
             link,
             styles[color],
             styles[size],
@@ -42,17 +42,17 @@ const Link = (props: LinkProps) => {
           ].join(" ")}
         >
             {startIcon && (
-              <span className={[mr, icon].join(' ')}>
+              <div className={[mr, icon].join(' ')}>
                 {startIcon}
-              </span>
+              </div>
             )}
               {children}
             {endIcon && (
-              <span className={[ml, icon].join(' ')}>
+              <div className={[ml, icon].join(' ')}>
                 {endIcon}
-              </span>
+              </div>
             )}
-        </span>
+        </div>
     );
 };
 
