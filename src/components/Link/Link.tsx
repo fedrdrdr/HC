@@ -1,49 +1,58 @@
-import React, {ReactElement} from "react";
-import classes from "./Link.module.css";
+import React, { ReactElement } from 'react';
+import styles from './Link.module.css';
 
 export interface LinkProps {
-
-    children: ReactElement|string;
-    path?: string;
+    children: ReactElement | string;
     className?: string;
-    color?: "black" | "blue" | "violet" | "white" ;
-    size?: "s" | "m" | "l";
+    color?: 'black' | 'blue' | 'violet' | 'white' ;
+    size?: 's' | 'm' | 'l';
     startIcon?: ReactElement;
     endIcon?: ReactElement;
     style?:React.CSSProperties;
-    nonUnderline?:boolean|undefined;
+    nonUnderline?: boolean | undefined;
   }
 
+const Link = (props: LinkProps) => {
+    const {
+      className,
+      size = 'm',
+      children,
+      color = 'black',
+      startIcon,
+      endIcon,
+      nonUnderline
+    } = props
 
-const Link: React.FC<LinkProps> = ({path="#", className, size="s", children, color="black",startIcon, endIcon, nonUnderline }) => {
+    const {
+      none_border,
+      link,
+      mr,
+      ml,
+      icon,
+    } = styles
 
-    const nonUnderlineLink = (nonUnderline:boolean|undefined) => {
-        switch (nonUnderline) {
-            case true:
-                return classes.none_border;
-            case false:
-                return "";
-        }
-    };
 
-    if (startIcon){
-        return (
-                <a href={path} className={[classes.link, classes[size], classes[color],nonUnderlineLink(nonUnderline), className].join(" ")} >
-                    {startIcon}<div/>{children}
-                </a>
-        );
-    }
-    else if (endIcon){
-        return (
-            <a href={path}  className={[classes.link, classes[color],nonUnderlineLink(nonUnderline), className].join(" ")} >
-                {children}<div/>{endIcon}
-            </a>
-        );
-    }
     return (
-        <a href={path}  className={[classes.link, classes[color],nonUnderlineLink(nonUnderline), className].join(" ")} >
-            {children}
-        </a>
+        <span className={[
+            link,
+            styles[color],
+            styles[size],
+            nonUnderline ? none_border : '',
+            className
+          ].join(" ")}
+        >
+            {startIcon && (
+              <span className={[mr, icon].join(' ')}>
+                {startIcon}
+              </span>
+            )}
+              {children}
+            {endIcon && (
+              <span className={[ml, icon].join(' ')}>
+                {endIcon}
+              </span>
+            )}
+        </span>
     );
 };
 
