@@ -7,10 +7,12 @@ export interface PopoverProps {
     avatar: HTMLImageElement|ReactElement;
     className?:string;
     anchorOrigin: "right"|"left";
+    children?:ReactElement;
 }
 
 const Popover: React.FC<PopoverProps> = ({
     name,
+    children,
     message,
     avatar,
     anchorOrigin,
@@ -20,13 +22,16 @@ const Popover: React.FC<PopoverProps> = ({
 
     return (
        <div className={[className, classes.container, classes[anchorOrigin]].join(" ")} >
-           <div >
+           <div className={classes.profile}>
+           <div>
                {avatar}
            </div>
            <div className={classes.text}>
                <div className={classes.name}>{name}</div>
                <div className={classes.message}>{message}</div>
            </div>
+           </div>
+           <div>{children}</div>
        </div>
     );
 };

@@ -2,7 +2,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     background: #FFFFFF;
     color:#292929;
     box-sizing: border-box;
@@ -26,6 +26,11 @@
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 4px;
+}
+.profile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .message {
