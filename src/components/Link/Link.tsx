@@ -1,11 +1,11 @@
-import React, { ReactElement } from 'react';
-import styles from './Link.module.css';
+import React, { ReactElement } from "react";
+import styles from "./Link.module.css";
 
 export interface LinkProps {
     children: ReactElement | string;
     className?: string;
-    color?: 'black' | 'blue' | 'violet' | 'white' ;
-    size?: 's' | 'm' | 'l';
+    color?: "black" | "blue" | "violet" | "white" ;
+    size?: "s" | "m" | "l";
     startIcon?: ReactElement;
     endIcon?: ReactElement;
     style?:React.CSSProperties;
@@ -15,13 +15,13 @@ export interface LinkProps {
 const Link = (props: LinkProps) => {
     const {
       className,
-      size = 'm',
+      size = "m",
       children,
-      color = 'black',
+      color = "black",
       startIcon,
       endIcon,
       nonUnderline
-    } = props
+    } = props;
 
     const {
       none_border,
@@ -29,7 +29,7 @@ const Link = (props: LinkProps) => {
       mr,
       ml,
       icon,
-    } = styles
+    } = styles;
 
 
     return (
@@ -37,18 +37,18 @@ const Link = (props: LinkProps) => {
             link,
             styles[color],
             styles[size],
-            nonUnderline ? none_border : '',
+            nonUnderline ? none_border : "",
             className
           ].join(" ")}
         >
             {startIcon && (
-              <div className={[mr, icon].join(' ')}>
+              <div className={[mr, icon].join(" ")}>
                 {startIcon}
               </div>
             )}
               {children}
             {endIcon && (
-              <div className={[ml, icon].join(' ')}>
+              <div className={[ml, icon].join(" ")}>
                 {endIcon}
               </div>
             )}
