@@ -33,7 +33,7 @@ const Popover: React.FC<PopoverProps> = ({
                <div className={classes.message}>{message}</div>
            </div>
            </div>
-           <div>{children}</div>
+           {children}
        </div>
     );
 };
