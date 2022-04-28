@@ -19,6 +19,7 @@ const Link = (props: LinkProps) => {
       children,
       color = "black",
       startIcon,
+      style,
       endIcon,
       nonUnderline
     } = props;
@@ -33,7 +34,7 @@ const Link = (props: LinkProps) => {
 
 
     return (
-        <div className={[
+        <div style={style} className={[
             link,
             styles[color],
             styles[size],
