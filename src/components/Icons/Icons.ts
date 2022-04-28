@@ -10,3 +10,4 @@ export {MenuBurgerIcon} from "./MenuBurgerIcon";
 export {More} from "./More";
 export {AttentionIcon} from "./AttentionIcon";
 export {CalendarIcon} from "./CalendarIcon";
+export {AddFileIcon} from "./AddFileIcon";

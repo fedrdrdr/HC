@@ -4,6 +4,7 @@ import classes from "./Avatar.module.css";
 export interface AvatarProps {
     status:"online"|"offline";
     className?:string;
+    badgeClassName?:string;
     size: "xs"|"s"|"m"|"l"|"xl";
     src:string;
     alt:string;
@@ -16,8 +17,10 @@ const Avatar: React.FC<AvatarProps> = ({
      alt,
      size,
      style,
-     className
+     className,
+     badgeClassName
  }) => {
+
 
     if(status === "online"){
         return (

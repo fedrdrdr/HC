@@ -10,7 +10,7 @@ export interface InputProps {
     error?: boolean;
     errorMessage?: string;
     size?: "l" | "m" | "s";
-    type?: "text" | "password" | "email";
+    type?: "text" | "password" | "email" ;
     className?: string;
     onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
     onError?: () => void;
