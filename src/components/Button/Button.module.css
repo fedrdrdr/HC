@@ -74,7 +74,8 @@ button img {
 .solidYellow:active {
     background-color: #CC9216;
 }
-.flatBlack{
+
+.flatBlack {
     color: #0F0F0F;
     font-weight: 400;
 }
@@ -125,29 +126,29 @@ button img {
 }
 
 .solidWhite {
-  background-color: #FFFFFF;
-  color: #0F0F0F;
+    background-color: #FFFFFF;
+    color: #0F0F0F;
 }
 
 .solidWhite:hover {
-  background-color: #F5F5F5;
+    background-color: #F5F5F5;
 }
 
 .solidWhite:active {
-  background-color: #DBDBDB;
+    background-color: #DBDBDB;
 }
 
 .solidGreen {
-  background-color: #00AF9E;
-  color: #FFFFFF;
+    background-color: #00AF9E;
+    color: #FFFFFF;
 }
 
 .solidGreen:hover {
-  background-color: #009E8E;
+    background-color: #009E8E;
 }
 
 .solidGreen:active {
-  background-color: #008C7E;
+    background-color: #008C7E;
 }
 
 .solidRed {
@@ -191,255 +192,309 @@ button img {
 }
 
 
-
 .outlineBlack {
-  border: 1px solid #0F0F0F;
-  color: #0F0F0F;
+    border: 1px solid #0F0F0F;
+    color: #0F0F0F;
 }
 
 .outlineBlack:hover {
-  border: 1px solid #C2C2C2;
+    border: 1px solid #C2C2C2;
 }
 
 .outlineBlack:active {
-  border: 1px solid #DBDBDB;
+    border: 1px solid #DBDBDB;
 }
+
 .outlineWhite {
-  border: 1px solid #FFFFFF;
-  color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
 }
 
 .outlineWhite:hover {
-  border: 1px solid #C2C2C2;
+    border: 1px solid #C2C2C2;
 }
 
 .outlineWhite:active {
-  border: 1px solid #DBDBDB;
+    border: 1px solid #DBDBDB;
 }
+
 .outlineGreen {
-  border: 1px solid #00AF9E;
-  color: #00AF9E;
+    border: 1px solid #00AF9E;
+    color: #00AF9E;
 }
 
 .outlineGreen:hover {
-  border: 1px solid #80D7CF;
+    border: 1px solid #80D7CF;
 }
 
 .outlineGreen:active {
-  border: 1px solid #B3E7E2;
+    border: 1px solid #B3E7E2;
 }
 
 .flatGreen {
-  color: #00AF9E;
+    color: #00AF9E;
 }
 
 .flatGreen:hover {
-  background-color: #FFFFFF;
+    background-color: #FFFFFF;
 }
 
 .flatGreen:active {
-  background-color: #FFFFFF;
+    background-color: #FFFFFF;
 }
 
 .flatWhite {
-  color: #FFFFFF;
+    color: #FFFFFF;
 }
 
 .flatWhite:hover {
-  background-color: #424242;
+    background-color: #424242;
 }
 
 .flatWhite:active {
-  background-color: #292929;
+    background-color: #292929;
 }
+
 .flatBlack {
-  color: #292929;
+    color: #292929;
 }
 
 .flatBlack:hover {
-  background-color: #FFFFFF;
+    background-color: #FFFFFF;
 }
 
 .flatBlack:active {
-  background-color: #FFFFFF;
+    background-color: #FFFFFF;
 }
-
 
 
 /*todo classes как показано ниже*/
 
 /* red */
-.solid{
+.solid {
     background: #94368D;
     color: white;
 }
-.outline{
+
+.outline {
     border: 1px solid #94368D;
     color: #94368D;
 }
-.flat{
+
+.flat {
     color: #94368D;
 }
-.solid.red{
+
+.solid.red {
     background-color: #CF3642;
     color: white;
 }
+
 .solid.red:hover {
-  background-color: #BA313B;
+    background-color: #BA313B;
+    cursor: pointer;
 }
 
 .solid.red:active {
-  background-color: #A62B35;
+    background-color: #A62B35;
 }
-.outline.red{
-    border-color:#CF3642;
+
+.outline.red {
+    border-color: #CF3642;
     color: #CF3642;
 }
+
 .outline.red:hover {
-  border: 1px solid #E79BA1;
-  color: #CF3642;
+    border: 1px solid #E79BA1;
+    color: #CF3642;
+    cursor: pointer;
 }
 
 .outline.red:active {
-  border: 1px solid #F1C3C6;
-  color: #CF3642;
-}
-.flat.red{
+    border: 1px solid #F1C3C6;
     color: #CF3642;
 }
-.flat.red:hover {
-  background-color: #FFFFFF;
+
+.flat.red {
+    color: #CF3642;
 }
+
+.flat.red:hover {
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
 .flat.red:active {
-  background-color: #FFFFFF;
+    background-color: #FFFFFF;
 }
 
 /* violet */
 .solid.violet {
-  background-color: #94368D;
-  color: white;
+    background-color: #94368D;
+    color: white;
 }
+
 .solid.violet:hover {
-  background-color: #85317F;
+    background-color: #85317F;
+    cursor: pointer;
 }
+
 .solid.violet:active {
-  background-color: #762B71;
+    background-color: #762B71;
 }
+
 .outline.violet {
-  border: 1px solid #94368D;
-  color: #94368D;
+    border: 1px solid #94368D;
+    color: #94368D;
 }
+
 .outline.violet:hover {
-  border: 1px solid #CA9BC6;
-  color: #94368D;
+    border: 1px solid #CA9BC6;
+    color: #94368D;
 }
+
 .outline.violet:active {
-  border: 1px solid #DFC3DD;
-  color: #762B71;
+    border: 1px solid #DFC3DD;
+    color: #762B71;
 }
+
 .flat.violet {
-  background: none;
-  color: #94368D;
+    background: none;
+    color: #94368D;
 }
+
 .flat.violet:hover {
-  background: #FFFFFF;
+    background: #FFFFFF;
+    cursor: pointer;
 }
+
 .flat.violet:active {
-  background: #FFFFFF;
+    background: #FFFFFF;
 }
 
 /* yellow */
 .solid.yellow {
-  background-color: #FFB71B;
-  color: #0F0F0F;
+    background-color: #FFB71B;
+    color: #0F0F0F;
 }
+
 .solid.yellow:hover {
-  background-color: #E6A518;
+    background-color: #E6A518;
+    cursor: pointer;
 }
+
 .solid.yellow:active {
-  background-color: #CC9216;
+    background-color: #CC9216;
 }
 
 /* black */
 .outline.black {
-  border: 1px solid #0F0F0F;
-  color: #0F0F0F;
+    border: 1px solid #0F0F0F;
+    color: #0F0F0F;
 }
+
 .outline.black:hover {
-  border: 1px solid #C2C2C2;
+    border: 1px solid #C2C2C2;
 }
+
 .outline.black:active {
-  border: 1px solid #DBDBDB;
+    border: 1px solid #DBDBDB;
 }
+
 .flat.black {
-  color: #292929;
+    color: #292929;
 }
+
 .flat.black:hover {
-  background-color: #FFFFFF;
+    background-color: #FFFFFF;
+    cursor: pointer;
 }
+
 .flat.black:active {
-  background-color: #FFFFFF;
+    background-color: #FFFFFF;
 }
 
 /* white */
 .solid.white {
-  background-color: #FFFFFF;
-  color: #0F0F0F;
+    background-color: #FFFFFF;
+    color: #0F0F0F;
 }
+
 .solid.white:hover {
-  background-color: #F5F5F5;
+    background-color: #F5F5F5;
+    cursor: pointer;
 }
+
 .solid.white:active {
-  background-color: #DBDBDB;
+    background-color: #DBDBDB;
 }
+
 .outline.white {
-  border: 1px solid #FFFFFF;
-  color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
 }
+
 .outline.white:hover {
-  border: 1px solid #C2C2C2;
+    border: 1px solid #C2C2C2;
+    cursor: pointer;
 }
+
 .outline.white:active {
-  border: 1px solid #DBDBDB;
+    border: 1px solid #DBDBDB;
 }
+
 .flat.white {
-  color: #FFFFFF;
+    color: #FFFFFF;
 }
+
 .flat.white:hover {
-  background-color: #424242;
+    background-color: #424242;
+    cursor: pointer;
 }
+
 .flat.white:active {
-  background-color: #292929;
+    background-color: #292929;
 }
 
 /* green */
 
 .solid.green {
-  background-color: #00AF9E;
-  color: #FFFFFF;
+    background-color: #00AF9E;
+    color: #FFFFFF;
 }
+
 .solid.green:hover {
-  background-color: #009E8E;
+    background-color: #009E8E;
+    cursor: pointer;
 }
+
 .solid.green:active {
-  background-color: #008C7E;
+    background-color: #008C7E;
 }
+
 .outline.green {
-  border: 1px solid #00AF9E;
-  color: #00AF9E;
+    border: 1px solid #00AF9E;
+    color: #00AF9E;
 }
+
 .outline.green:hover {
-  border: 1px solid #80D7CF;
+    border: 1px solid #80D7CF;
+    cursor: pointer;
 }
+
 .outline.green:active {
-  border: 1px solid #B3E7E2;
+    border: 1px solid #B3E7E2;
 }
+
 .flat.green {
-  color: #00AF9E;
+    color: #00AF9E;
 }
+
 .flat.green:hover {
-  background-color: #FFFFFF;
+    background-color: #FFFFFF;
+    cursor: pointer;
 }
+
 .flat.green:active {
-  background-color: #FFFFFF;
+    background-color: #FFFFFF;
 }
