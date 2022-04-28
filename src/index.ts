@@ -17,6 +17,7 @@ import {
     LinkedInIcon,
     More,
     AttentionIcon,
+    AddFileIcon,
     CalendarIcon
 } from "../src/components/Icons/Icons";
 import Menu from "./components/Menu/Menu";
@@ -47,5 +48,6 @@ export {
     Popover,
     AttentionIcon,
     CalendarIcon,
+    AddFileIcon,
     styles,
 };
